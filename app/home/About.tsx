@@ -1,7 +1,4 @@
-"use client";
-
 import React from "react";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import { dancingScript, caveat } from "../lib/fonts";
 
@@ -34,12 +31,8 @@ export default function About() {
             Flowers by Bella
           </h1>
         </header>
-        <motion.p
+        <p
           className={`text-xl sm:text-2xl md:text-3xl leading-relaxed ${caveat.className}`}
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
-          viewport={{ once: true }}
         >
           Un loc unde visele infloresc in fiecare petala, iar pasiunea pentru
           frumos se transforma in arta. Fiecare floare care ajunge in mainile
@@ -50,7 +43,7 @@ export default function About() {
           memorabil. Flowers by Bella nu este doar o florarie: este un vis
           devenit realitate, un omagiu adus naturii si artei de a transmite
           sentimente prin frumusete.
-        </motion.p>
+        </p>
       </section>
     </main>
   );
