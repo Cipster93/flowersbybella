@@ -1,6 +1,5 @@
 import React from "react";
 import { FaTruck, FaWhatsapp } from "react-icons/fa";
-import "../globals.css";
 import Link from "next/link";
 import { dancingScript } from "../lib/fonts";
 
