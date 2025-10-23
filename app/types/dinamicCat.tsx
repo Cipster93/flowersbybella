@@ -3,13 +3,56 @@ export type DinamicCategory = {
     slug: string;
     img: string;
     desc: string;
+    price?: string;
 };
 
 export const dinamicCategory: DinamicCategory[] = [
-    { name: "Oferte", slug: "oferte", img: "/flower1.jpg", desc: "Descoperă toate produsele noastre." },
-    { name: "Aniversare", slug: "aniversare", img: "/eleganta2.jpg", desc: "Buchete speciale pentru zile de naștere." },
-    { name: "Aranjamente", slug: "aranjamente", img: "/armonie2.jpg", desc: "Aranjamente florale pentru orice ocazie." },
-    { name: "Memorial", slug: "memorial", img: "/emotie1.jpg", desc: "Respect și eleganță în momente delicate." },
-    { name: "Evenimente", slug: "evenimente", img: "/modern1.jpg", desc: "Florile perfecte pentru evenimente speciale." },
-    { name: "Ocazii", slug: "ocazii", img: "/rafinament2.jpg", desc: "Buchete și cadouri pentru orice ocazie." },
+    { 
+        name: "Oferte", 
+        slug: "oferte", 
+        img: "/flower1.jpg", 
+        desc: "Profită de cele mai bune oferte și promoții la buchete și aranjamente florale." 
+    },
+    { 
+        name: "Eleganță", 
+        slug: "eleganta", 
+        img: "/eleganta2.jpg", 
+        desc: "Buchete elegante, perfecte pentru evenimente rafinate și momente speciale.",
+        price: "50 lei - 150 lei"
+    },
+    { 
+        name: "Rafinament", 
+        slug: "rafinament", 
+        img: "/eleganta2.jpg", 
+        desc: "Aranjamente florale cu detalii sofisticate, pentru gusturi exigente.",
+        price: "150 lei"
+    },
+    { 
+        name: "Aranjamente", 
+        slug: "aranjamente", 
+        img: "/armonie2.jpg", 
+        desc: "Aranjamente florale creative pentru orice ocazie, de la aniversări la evenimente corporate.",
+        price: "70 lei"
+    },
+    { 
+        name: "Momente de neuitat", 
+        slug: "momente-de-neuitat", 
+        img: "/armonie2.jpg", 
+        desc: "Buchete și aranjamente care transformă orice clipă într-o amintire deosebită.",
+        price: "100 lei"
+    },
+    { 
+        name: "Ornamente", 
+        slug: "ornamente", 
+        img: "/emotie1.jpg", 
+        desc: "Ornamente florale pentru decorarea spațiilor cu stil și emoție.",
+        price: "50 lei"
+    },
+    { 
+        name: "Memorial", 
+        slug: "memorial", 
+        img: "/modern1.jpg", 
+        desc: "Compoziții florale pentru momente de reculegere și omagiu.",
+        price: "70 lei"
+    },
 ];

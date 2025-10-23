@@ -50,19 +50,37 @@ const CatalogCategories = () => {
               height={384}
               className="w-72 h-72 md:w-80 md:h-80 object-cover rounded-xl mb-4"
             />
-            <h2
-              className={`${dancingScript.className} text-2xl md:text-4xl font-semibold text-yellow-500 mb-2 text-center`}
+            {/* Card content */}
+            <div
+              className={`flex flex-col items-center w-full ${
+                idx === 0
+                  ? "justify-start min-h-[220px] flex-grow"
+                  : "justify-between min-h-[220px]"
+              }`}
             >
-              {cat.name}
-            </h2>
-            <p
-              className={`${caveat.className} text-gray-300 text-center mb-4 text-2xl md:text-2xl`}
-            >
-              {cat.desc}
-            </p>
+              <h2
+                className={`${dancingScript.className} text-2xl md:text-4xl font-semibold text-yellow-500 mb-2 text-center`}
+              >
+                {cat.name}
+              </h2>
+              <p
+                className={`${caveat.className} text-gray-300 text-center mb-4 text-2xl md:text-2xl`}
+              >
+                {cat.desc}
+              </p>
+              {cat.price && (
+                <span
+                  className={`${dancingScript.className} block text-yellow-400 font-bold text-lg md:text-xl mb-4 rounded-full px-4 py-1`}
+                >
+                  {cat.price}
+                </span>
+              )}
+              {/* Pentru primul card, spațiu liber pentru a împinge butonul jos */}
+              {idx === 0 && <div className="flex-grow" />}
+            </div>
             <Link
               href={`/catalog/${cat.slug}`}
-              className={`bg-yellow-700 text-white text-xl px-4 py-1 rounded-full font-semibold hover:bg-yellow-500 transition ${dancingScript.className}`}
+              className={`bg-yellow-700 text-white text-xl px-4 py-1 rounded-full font-semibold hover:bg-yellow-500 transition ${dancingScript.className} mt-auto`}
             >
               Vezi detalii
             </Link>
