@@ -28,10 +28,10 @@ export default function WhatupContact() {
                     role="dialog"
                     aria-modal="true"
                     aria-label="Detalii contact WhatsApp"
-                    className="absolute left-0 bottom-full -translate-x-[90%] mb-4 z-50 backdrop-blur-xl text-white rounded-2xl p-5 min-w-[320px] shadow-2xl flex flex-col items-start animate-fade-in"
+                    className="absolute left-0 bottom-full -translate-x-[90%] mb-4 z-50 bg-black text-white rounded-2xl p-5 min-w-[320px] shadow-2xl flex flex-col items-start animate-fade-in"
                 >
                     <button
-                        className="absolute top-2 right-2 text-green-400 hover:text-yellow-400 text-2xl font-bold rounded-full bg-black/40 px-2 py-0.5 shadow-md transition-colors duration-200"
+                        className="absolute top-2 right-2 text-yellow-500 text-2xl font-bold rounded-full bg-black/40 px-2 py-0.5 shadow-md"
                         onClick={() => setShow(false)}
                         aria-label="Închide detalii WhatsApp"
                     >
@@ -53,14 +53,14 @@ export default function WhatupContact() {
                             href="https://wa.me/40712345678"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-green-400 underline ml-2 font-bold"
+                            className="text-yellow-500 underline ml-2 font-bold"
                             aria-label="Trimite mesaj WhatsApp la 0728-361-107"
                         >
                             0728-361-107
                         </Link>
                     </p>
 
-                    <p className="text-xs text-gray-400 mt-2 italic">
+                    <p className="text-xs text-gray-300 mt-2 italic">
                         Răspundem rapid pe WhatsApp!
                     </p>
                 </div>

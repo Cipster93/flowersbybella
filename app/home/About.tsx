@@ -26,7 +26,7 @@ export default function About() {
       </section>
       <section
         aria-label="Descriere Flowers by Bella"
-        className="w-full md:w-1/2 mt-10 md:mt-0 md:pl-16 text-gray-300 border-r-2 border-yellow-500 px-6"
+        className="w-full md:w-1/2 mt-10 md:mt-0 md:pl-16 bg-black text-gray-300 border-r-2 border-yellow-500 px-6"
       >
         <header>
           <motion.h1
