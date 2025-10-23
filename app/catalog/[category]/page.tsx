@@ -19,27 +19,27 @@ export default function CategoryPage({ params }: CategoryParams) {
     const flowers = [
         {
             name: "Trandafir Roșu",
-            img: "/flower1.jpg",
+            img: "/flower1.webp",
             desc: "Simbol al iubirii și pasiunii, perfect pentru orice ocazie romantică.",
         },
         {
             name: "Lalele Galbene",
-            img: "/eleganta2.jpg",
+            img: "/eleganta2.webp",
             desc: "Aduc veselie și optimism, ideale pentru aniversări și zile însorite.",
         },
         {
             name: "Orhidee Albă",
-            img: "/armonie2.jpg",
+            img: "/armonie2.webp",
             desc: "Eleganță pură, potrivită pentru evenimente speciale și decoruri rafinate.",
         },
         {
             name: "Crini Imperiali",
-            img: "/modern1.jpg",
+            img: "/modern1.webp",
             desc: "Florile regalității, aduc noblețe și rafinament oricărui aranjament.",
         },
         {
             name: "Gerbera Roz",
-            img: "/rafinament2.jpg",
+            img: "/rafinament2.webp",
             desc: "Simbolizează prietenia și bucuria, perfecte pentru a însenina orice zi.",
         },
     ];

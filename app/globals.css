@@ -8,16 +8,17 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: black;
+  color : white;
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #000000;
+  --background: #000000;   /* fundal negru implicit */
+  --foreground: #ededed;   /* text deschis implicit */
 }
 
 @theme inline {
-  --color-background: var(--foreground);
-  --color-foreground: var(--background);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }

@@ -12,7 +12,7 @@ const Events = () => {
             {/* Left banner */}
             <div className="w-full lg:w-1/3 flex justify-center">
                 <Image
-                    src="/banner_left1.jpg"
+                    src="/banner_left1.webp"
                     alt="Decor floral Flowers by Bella pentru evenimente"
                     width={380}
                     height={380}
@@ -40,7 +40,7 @@ const Events = () => {
             {/* Right banner */}
             <div className="w-full lg:w-1/3 flex justify-center">
                 <Image
-                    src="/banner_right2.jpg"
+                    src="/banner_right2.webp"
                     alt="Decor floral Flowers by Bella pentru evenimente"
                     width={380}
                     height={380}

@@ -3,7 +3,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import about from "../../public/about.jpg";
 import { dancingScript, caveat } from "../lib/fonts";
 
 export default function About() {
@@ -15,18 +14,18 @@ export default function About() {
     >
       <section
         aria-label="Imagine Flowers by Bella"
-        className="relative w-full md:w-1/2 h-80 md:h-[500px] flex items-center justify-center"
+        className="relative w-full md:w-1/2 bg-transparent h-80 md:h-[500px] flex items-center justify-center"
       >
         <Image
-          src={about}
+          src="/about.webp"
           alt="Flowers by Bella"
-          className="object-cover rounded-xl shadow-2xl z-[-1]"
+          className="object-cover rounded-xl shadow-2xl"
           fill
         />
       </section>
       <section
         aria-label="Descriere Flowers by Bella"
-        className="w-full md:w-1/2 mt-10 md:mt-0 md:pl-16 bg-black text-gray-300 border-r-2 border-yellow-500 px-6"
+        className="w-full md:w-1/2 mt-10 md:mt-0 md:pl-16 text-gray-300 border-r-2 border-yellow-500 px-6"
       >
         <header>
           <motion.h1
