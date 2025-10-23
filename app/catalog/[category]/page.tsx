@@ -6,12 +6,12 @@ import Image from "next/image";
 import { dinamicCategory } from "@/app/types/dinamicCat";
 import { dancingScript, caveat } from "@/app/lib/fonts";
 
-
 type CategoryParams = { params: Promise<{ category: string }> };
 
 export default function CategoryPage({ params }: CategoryParams) {
     const router = useRouter();
     const { category } = React.use(params);
+    const [modalImage, setModalImage] = useState<string | null>(null);
     const foundCategory = dinamicCategory.find(cat => cat.slug === category);
     if (!foundCategory) return notFound();
 
@@ -44,7 +44,6 @@ export default function CategoryPage({ params }: CategoryParams) {
         },
     ];
 
-    const [modalImage, setModalImage] = useState<string | null>(null);
 
     return (
         <main className="min-h-screen py-10 px-4 w-full">

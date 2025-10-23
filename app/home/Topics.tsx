@@ -33,15 +33,11 @@ const Topics = () => {
           >
             {/* Text Section */}
             <div className="w-full md:max-w-md md:w-1/3 flex flex-col justify-center items-start h-full gap-4">
-              <motion.h2
+              <h2
                 className={`text-6xl font-bold text-yellow-600 mb-2 font-serif ${dancingScript.className}`}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, ease: "easeOut" }}
-                viewport={{ once: true }}
               >
                 {topic.title}
-              </motion.h2>
+              </h2>
               <motion.p
                 className={`text-gray-300 text-2xl mb-2 ${caveat.className}`}
                 initial={{ opacity: 0, y: 40 }}

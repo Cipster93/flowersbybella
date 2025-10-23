@@ -28,15 +28,11 @@ export default function About() {
         className="w-full md:w-1/2 mt-10 md:mt-0 md:pl-16 text-gray-300 border-r-2 border-yellow-500 px-6"
       >
         <header>
-          <motion.h1
+          <h1
             className={`text-4xl sm:text-3xl md:text-6xl font-bold font-serif text-yellow-500 mb-4 text-center ${dancingScript.className}`}
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease: "easeOut" }}
-            viewport={{ once: true }}
           >
             Flowers by Bella
-          </motion.h1>
+          </h1>
         </header>
         <motion.p
           className={`text-xl sm:text-2xl md:text-3xl leading-relaxed ${caveat.className}`}

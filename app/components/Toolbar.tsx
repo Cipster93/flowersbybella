@@ -2,7 +2,7 @@ import React from "react";
 import DeliveryInfo from "./DeliveryInfo";
 import Link from "next/link";
 import { dinamicCategory } from '../types/dinamicCat';
-import {dancingScript, caveat} from '../lib/fonts'
+import {dancingScript} from '../lib/fonts'
 
 export default function Toolbar() {
   return (
