@@ -21,6 +21,7 @@ export default function About() {
           alt="Flowers by Bella"
           className="object-cover rounded-xl shadow-2xl"
           fill
+          priority
         />
       </section>
       <section

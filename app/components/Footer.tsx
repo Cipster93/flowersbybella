@@ -17,7 +17,7 @@ const Footer = () => {
       <main className="w-[80%] mx-auto flex flex-col md:flex-row justify-between items-center gap-6 md:gap-10">
         {/* Brand Section */}
         <section aria-label="Despre Flowers by Bella" className="flex flex-col items-center md:items-start text-center md:text-left space-y-1">
-          <Image src='/logo.web' alt="Logo Flowers by Bella" width={130} height={70} className="rounded-md" />
+          <Image src='/logo.webp' alt="Logo Flowers by Bella" width={130} height={70} className="rounded-md" />
           <h2 className="text-2xl font-serif font-bold text-yellow-400 tracking-wide">Flowers by Bella</h2>
           <p className="text-xs text-gray-300 italic max-w-xs">
             Emotie, rafinament si eleganta in fiecare petala.

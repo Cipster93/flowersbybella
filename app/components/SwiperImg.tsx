@@ -44,7 +44,6 @@ export default function CoursesHeader() {
                 src={src}
                 alt={`Imagine curs ${index + 1}`}
                 className="w-full h-48 sm:h-80 md:h-72 lg:h-78 object-cover rounded-xl shadow-md"
-                loading="lazy"
               />
             </SwiperSlide>
           ))}
