@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -16,7 +16,10 @@ export default function CoursesHeader() {
       <h1 className="sr-only">Flowers by Bella</h1>
 
       {/* Slider Section */}
-      <section aria-label="Imagini cursuri" className="relative w-full overflow-hidden">
+      <section
+        aria-label="Imagini cursuri"
+        className="relative w-full overflow-hidden"
+      >
         {/* Gradient overlay pentru vizibilitate */}
         <div className="absolute w-full inset-0 pointer-events-none bg-gradient-to-r from-black via-transparent to-black z-10"></div>
 
@@ -33,16 +36,20 @@ export default function CoursesHeader() {
           }}
         >
           {images.map((src, index) => (
-            <SwiperSlide key={index} className="flex items-center justify-center">
+            <SwiperSlide
+              key={index}
+              className="flex items-center justify-center"
+            >
               <img
                 src={src}
                 alt={`Imagine curs ${index + 1}`}
-                className="w-full h-48 sm:h-60 md:h-72 lg:h-78 object-cover rounded-xl shadow-md"
+                className="w-full h-48 sm:h-80 md:h-72 lg:h-78 object-cover rounded-xl shadow-md"
+                loading="lazy"
               />
             </SwiperSlide>
           ))}
         </Swiper>
       </section>
     </header>
-  )
+  );
 }

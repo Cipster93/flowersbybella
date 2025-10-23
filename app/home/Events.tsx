@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import {dancingScript, caveat} from '../lib/fonts'
 
 const Events = () => {
     return (
@@ -22,10 +23,10 @@ const Events = () => {
             {/* Center content */}
             <div className="w-full lg:w-1/3 text-center flex flex-col items-center justify-center gap-10">
                 <header>
-                    <h2 className="text-3xl md:text-4xl font-bold text-yellow-500 mb-4 font-serif">
+                    <h2 className={`text-3xl md:text-7xl font-bold text-yellow-500 mb-4 font-serif ${dancingScript.className}`}>
                         Flowers by Bella la evenimente
                     </h2>
-                    <p className="text-gray-300 text-lg md:text-xl leading-relaxed">
+                    <p className={`text-gray-300 text-2xl md:text-2xl leading-relaxed ${caveat.className}`}>
                         Flowers by Bella participa la nunti, botezuri, evenimente corporate si expozitii locale,
                         aducand un strop de eleganta si rafinament in fiecare moment special. Oferim aranjamente florale
                         personalizate, consultanta florala dedicata pentru a transforma fiecare spatiu intr-un decor memorabil

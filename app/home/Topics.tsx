@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import ImageModal from "../components/ImageModal";
 import { motion } from "framer-motion";
 import { topics, Topic } from "../types/topics";
+import { dancingScript, caveat } from "../lib/fonts";
 
 const borderStyles = [
   "border-l-2 border-b-2 border-yellow-500 shadow-[0_-4px_15px_rgba(255,215,0,0.1)]",
@@ -26,12 +27,14 @@ const Topics = () => {
           <section
             key={idx}
             aria-label={topic.title}
-            className={`w-full flex flex-col md:flex-row ${reverse ? "md:flex-row-reverse" : ""} items-center justify-between rounded-2xl shadow-2xl p-6 gap-8 ${borderClass}`}
+            className={`w-full flex flex-col md:flex-row ${
+              reverse ? "md:flex-row-reverse" : ""
+            } items-center justify-between rounded-2xl shadow-2xl p-6 gap-8 ${borderClass}`}
           >
             {/* Text Section */}
-            <div className="w-full md:max-w-md md:w-1/3 flex flex-col justify-center items-start h-full">
+            <div className="w-full md:max-w-md md:w-1/3 flex flex-col justify-center items-start h-full gap-4">
               <motion.h2
-                className="text-2xl font-bold text-yellow-600 mb-2 font-serif"
+                className={`text-6xl font-bold text-yellow-600 mb-2 font-serif ${dancingScript.className}`}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, ease: "easeOut" }}
@@ -40,7 +43,7 @@ const Topics = () => {
                 {topic.title}
               </motion.h2>
               <motion.p
-                className="text-gray-300 text-lg mb-2"
+                className={`text-gray-300 text-2xl mb-2 ${caveat.className}`}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
@@ -51,9 +54,9 @@ const Topics = () => {
             </div>
 
             {/* Images Section */}
-            <div className="w-full md:w-2/3 flex gap-6 items-center justify-center">
+            <div className="w-full md:w-2/3 flex flex-col sm:flex-row gap-6 items-center justify-center">
               {topic.images.map((img: string, i: number) => (
-                <figure key={i} className="w-1/3">
+                <figure key={i} className="w-full sm:w-1/3">
                   <img
                     src={img}
                     alt={`${topic.title} ${i + 1}`}
@@ -68,7 +71,10 @@ const Topics = () => {
       })}
 
       {/* Modală pentru imagine */}
-      <ImageModal image={selectedImage} onClose={() => setSelectedImage(null)} />
+      <ImageModal
+        image={selectedImage}
+        onClose={() => setSelectedImage(null)}
+      />
     </main>
   );
 };
