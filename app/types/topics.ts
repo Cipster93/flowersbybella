@@ -8,26 +8,26 @@ export const topics: Topic[] = [
     {
         title: "Eleganta",
         images: ["/eleganta1.jpg", "/eleganta2.jpg", "/eleganta3.jpg"],
-        desc: "Eleganta florilor noastre este o declaratie de stil. Fiecare petala este aleasa cu atentie, iar aranjamentele sunt create pentru a reflecta finetea si gratia moderna. Perfecte pentru evenimente rafinate, spatii luxoase sau momente in care vrei sa transmiti distinctie si clasa.",
+        desc: "Eleganta florilor noastre aduce rafinament si stil in orice moment. Fiecare aranjament este creat cu grija pentru detalii, potrivit pentru evenimente speciale sau decoruri sofisticate.",
     },
     {
         title: "Rafinament",
         images: ["/rafinament1.jpg", "/rafinament2.jpg", "/rafinament3.jpg"],
-        desc: "Rafinamentul este arta echilibrului intre culoare, forma si emotie. Fiecare buchet poarta o poveste subtila, unde textura petalelor, tonurile pastelate si parfumul delicat se combina pentru a crea o experienta vizuala sofisticata — ca o piesa couture florala.",
+        desc: "Rafinamentul se regaseste in fiecare buchet, unde culorile si formele se imbina armonios. Florile noastre sunt alese pentru a oferi o experienta vizuala deosebita si eleganta discreta.",
     },
     {
-        title: "Armonie",
+        title: "Aranjamente",
         images: ["/armonie.jpg", "/armonie2.jpg", "/armonie3.jpg"],
-        desc: "Armonia defineste frumusetea naturala a creatiilor noastre. Culorile, lumina si proportiile se intalnesc intr-un dans al simturilor, dand viata unor compozitii care aduc pace, energie si eleganta oricarui spatiu. Inspirate din natura, dar gandite ca pentru o galerie de arta florala.",
+        desc: "Aranjamentele florale sunt gandite pentru a aduce frumusete si energie in orice spatiu. Compozitiile noastre imbina creativitatea cu naturaletea, fiind ideale pentru orice ocazie.",
     },
     {
-        title: "Stil Modern",
+        title: "Momente de neuitat",
         images: ["/modern.jpg", "/modern1.jpg", "/modern2.jpg"],
-        desc: "Pentru cei care iubesc designul contemporan, stilul modern aduce minimalismul si expresivitatea intr-o singura compozitie. Linii curate, contraste indraznete si texturi inedite — buchetele noastre sunt creatii fashion, potrivite pentru evenimente urbane sau decoruri exclusiviste.",
+        desc: "Transforma fiecare clipa intr-o amintire speciala cu buchetele noastre. Florile sunt alese pentru a marca momentele importante din viata ta, oferind emotie si culoare.",
     },
     {
-        title: "Emotie",
+        title: "Ornamente",
         images: ["/emotie1.jpg", "/emotie2.jpg", "/emotie3.jpg"],
-        desc: "Florile au puterea de a transmite emotii fara cuvinte. De la gingasia unei roze pana la intensitatea unui bujor, fiecare detaliu este o expresie sincera a sentimentelor. Noi le aranjam cu pasiune, astfel incat emotia sa devina arta vizuala.",
+        desc: "Ornamentele florale aduc un plus de stil si personalitate decorului tau. Fiecare piesa este realizata cu pasiune, pentru a transmite sentimente si a infrumuseta orice incapere.",
     },
 ];
