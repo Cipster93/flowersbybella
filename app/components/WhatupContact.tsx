@@ -48,16 +48,7 @@ export default function WhatupContact() {
                     </p>
 
                     <p className="text-sm mb-1">
-                        <span className="font-semibold text-yellow-400">Număr:</span>
-                        <Link
-                            href="https://wa.me/40712345678"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-yellow-500 underline ml-2 font-bold"
-                            aria-label="Trimite mesaj WhatsApp la 0728-361-107"
-                        >
-                            0728-361-107
-                        </Link>
+                        <span className="font-semibold text-yellow-400">Număr: 0728-361-107</span>
                     </p>
 
                     <p className="text-xs text-gray-300 mt-2 italic">
