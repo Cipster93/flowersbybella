@@ -21,8 +21,6 @@ export default function About() {
           alt="Flowers by Bella"
           className="object-cover rounded-xl shadow-2xl"
           fill
-          fetchPriority="high"
-          sizes="(max-width: 768px) 100vw, 50vw"
         />
       </section>
       <section
