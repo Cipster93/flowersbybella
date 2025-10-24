@@ -33,7 +33,7 @@ export default function About() {
           </h1>
         </header>
         <p
-          className={`text-xl sm:text-2xl md:text-3xl leading-relaxed ${caveat.className}`}
+          className={`text-xl sm:text-2xl md:text-2xl leading-relaxed ${caveat.className}`}
         >
           Un loc unde visele infloresc in fiecare petala, iar pasiunea pentru
           frumos se transforma in arta. Fiecare floare care ajunge in mainile
