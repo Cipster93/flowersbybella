@@ -36,7 +36,7 @@ export default function CategoryPage({ params }: CategoryParams) {
                                 alt={flower.name}
                                 width={384}
                                 height={384}
-                                className="w-52 h-52 md:w-80 md:h-86 object-cover rounded-2xl mb-2 cursor-pointer"
+                                className="w-72 h-72 md:w-80 md:h-86 object-cover rounded-2xl mb-2 cursor-pointer"
                                 onClick={() => setModalImage(flower.img)}
                             />
                             <h2 className={`${dancingScript.className} text-4xl font-semibold text-yellow-500 mb-1 text-center`}>
