@@ -17,7 +17,7 @@ const DeliveryInfo = () => {
           className={`${dancingScript.className} text-2xl font-semibold tracking-wide text-white`}
           itemProp="description"
         >
-          Livrari la domiciliu
+          Comenzi si Livrari la domiciliu
         </span>
       </section>
 

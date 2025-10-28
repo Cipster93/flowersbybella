@@ -1,18 +1,18 @@
 export type Image =
-    | "/flower1.webp"
-    | "/flower2.webp"
-    | "/flower3.webp"
-    | "/flower4.webp"
-    | "/flower5.webp"
-    | "/flower6.webp"
-    | "/flower7.webp";
+  | "/Swiper/flower1.webp"
+  | "/Swiper/flower2.webp"
+  | "/Swiper/flower3.webp"
+  | "/Swiper/flower4.webp"
+  | "/Swiper/flower5.webp"
+  | "/Swiper/flower6.webp"
+  | "/Swiper/flower7.webp";
 
 export const images: Image[] = [
-    "/flower1.webp",
-    "/flower2.webp",
-    "/flower3.webp",
-    "/flower4.webp",
-    "/flower5.webp",
-    "/flower6.webp",
-    "/flower7.webp"
+  "/Swiper/flower1.webp",
+  "/Swiper/flower2.webp",
+  "/Swiper/flower3.webp",
+  "/Swiper/flower4.webp",
+  "/Swiper/flower5.webp",
+  "/Swiper/flower6.webp",
+  "/Swiper/flower7.webp"
 ];
