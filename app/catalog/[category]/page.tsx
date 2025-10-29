@@ -29,7 +29,7 @@ export default function CategoryPage({ params }: CategoryParams) {
                     {flowers.map((flower, idx) => (
                         <div
                             key={idx}
-                            className="rounded-3xl shadow-2xl py-3 flex flex-col items-center border-t-2 border-b-2 border-yellow-500"
+                            className="rounded-3xl shadow-2xl px-2 py-3 flex flex-col items-center border-t-2 border-b-2 border-yellow-500"
                         >
                             <Image
                                 src={flower.img}
@@ -42,7 +42,7 @@ export default function CategoryPage({ params }: CategoryParams) {
                             <h2 className={`${dancingScript.className} text-4xl font-semibold text-yellow-500 mb-1 text-center`}>
                                 {flower.name}
                             </h2>
-                            <p className={`${caveat.className} text-xl text-gray-300 text-center`}>
+                            <p className={`${caveat.className} text-xl text-gray-300 text-center p-2 h-auto`}>
                                 {flower.desc}
                             </p>
                         </div>

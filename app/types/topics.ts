@@ -17,7 +17,7 @@ export const topics: Topic[] = [
     },
     {
         title: "Momente de neuitat",
-        images: ["/modern.webp", "/modern1.webp", "/modern2.webp"],
+        images: ["/Eleganta/el1.webp", "/Eleganta/el2.webp", "/Eleganta/el3.webp"],
         desc: "Transforma fiecare clipa intr-o amintire speciala cu buchetele noastre. Florile sunt alese pentru a marca momentele importante din viata ta, oferind emotie si culoare.",
     },
     {
