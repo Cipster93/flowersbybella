@@ -48,7 +48,7 @@ export const dinamicCategory: DinamicCategory[] = [
     {
         name: "Momente de neuitat",
         slug: "momente-de-neuitat",
-        img: "/MomenteDeNeuitat/mdn1.webp",
+        img: "/Eleganta/el3.webp",
         desc: "Buchete care transformă fiecare clipă într-o amintire specială.",
         price: "50 lei - 150 lei",
         flowers: [
