@@ -6,7 +6,7 @@ import { dancingScript } from "../lib/fonts";
 const DeliveryInfo = () => {
   return (
     <main
-      className="mt-4 w-auto bg-black md:mt-0 flex flex-col sm:flex-row items-center sm:justify-center gap-3 sm:gap-4 px-4 py-1 rounded-xl border-b-2 border-r-2 border-t-2 border-yellow-500/40 shadow-lg"
+      className="mt-4 w-auto bg-black md:mt-0 flex flex-col items-center justify-center text-center sm:flex-row sm:justify-center gap-3 sm:gap-4 px-4 py-1 rounded-xl border-b-2 border-r-2 border-t-2 border-yellow-500/40 shadow-lg"
       itemScope
       itemType="https://schema.org/LocalBusiness"
     >
