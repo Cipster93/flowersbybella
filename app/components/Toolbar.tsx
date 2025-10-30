@@ -2,7 +2,7 @@ import React from "react";
 import DeliveryInfo from "./DeliveryInfo";
 import Link from "next/link";
 import { dinamicCategory } from '../types/dinamicCat';
-import {dancingScript} from '../lib/fonts'
+import { dancingScript } from '../lib/fonts'
 
 export default function Toolbar() {
   return (
@@ -15,10 +15,12 @@ export default function Toolbar() {
         <li>
           <Link
             href="/"
-            className={`text-xl px-4 py-2 rounded-sm text-yellow-500 font-semibold border-b-2 border-yellow-400/80 ${dancingScript.className}`}
+            className={`text-xl px-4 py-2 rounded-sm text-yellow-500 font-semibold border-b-2 border-yellow-400/30 hover:border-yellow-400/80 transition ${dancingScript.className}`}
           >
             Acasa
           </Link>
+        </li>
+        <li>
           <Link
             href="/catalog"
             className={`text-xl px-4 py-2 rounded-sm bg-yellow-500 text-black font-semibold border-b-2 border-yellow-400/80 ${dancingScript.className}`}
