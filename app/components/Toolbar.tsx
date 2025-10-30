@@ -14,6 +14,12 @@ export default function Toolbar() {
       <ul className="flex flex-wrap gap-6 md:gap-2 justify-center md:justify-start">
         <li>
           <Link
+            href="/"
+            className={`text-xl px-4 py-2 rounded-sm text-yellow-500 font-semibold border-b-2 border-yellow-400/80 ${dancingScript.className}`}
+          >
+            Acasa
+          </Link>
+          <Link
             href="/catalog"
             className={`text-xl px-4 py-2 rounded-sm bg-yellow-500 text-black font-semibold border-b-2 border-yellow-400/80 ${dancingScript.className}`}
           >

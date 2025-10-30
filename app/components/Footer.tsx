@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
 import SocialIcons from '../components/Icons'
 import PrivacyPolicyModal from './PrivacyPolicyModal'
+import Link from 'next/link'
 
 const Footer = () => {
   const [open, setOpen] = useState(false)
@@ -58,6 +59,14 @@ const Footer = () => {
         <nav aria-label="Retele sociale Flowers by Bella" className="flex flex-col items-center md:items-end space-y-2">
           <h3 className="text-yellow-400 font-semibold text-sm uppercase tracking-wide">Urmareste-ne</h3>
           <SocialIcons />
+          <div className="flex gap-4 mt-4 h-auto">
+            <a href='https://reclamatiisal.anpc.ro/' target='_blank' rel="noopener noreferrer">
+              <Image src="/anpc-sal.svg" alt="Floraria" width={90} height={90} className='w-52 h-24 object-contain' />
+            </a>
+            <a href="https://consumer-redress.ec.europa.eu/site-relocation_en" target='_blank' rel="noopener noreferrer">
+              <Image src="/anpc-sol.svg" alt="Glovo" width={90} height={90} className='w-52 h-24 object-contain' />
+            </a>
+          </div>
         </nav>
       </main>
 
