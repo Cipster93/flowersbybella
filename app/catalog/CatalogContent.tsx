@@ -4,6 +4,7 @@ import React from "react";
 import { dinamicCategory } from "../types/dinamicCat";
 import { dancingScript, caveat } from "../lib/fonts";
 
+
 const CatalogCategories = () => {
   return (
     <main className="w-full min-h-screen flex flex-col items-center py-12 bg-black">

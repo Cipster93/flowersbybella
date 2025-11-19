@@ -6,6 +6,12 @@ export type DinamicCategory = {
     price?: string;
     flowers?: { name: string; img: string; desc: string }[];
 };
+export const momenteDeNeuitatImages = [
+    "/momenteDeNeuitat/mom1.webp",
+    "/momenteDeNeuitat/mom2.webp",
+    "/momenteDeNeuitat/mom3.webp",
+    "/momenteDeNeuitat/mom4.webp",
+];
 
 export const dinamicCategory: DinamicCategory[] = [
     {
@@ -52,19 +58,13 @@ export const dinamicCategory: DinamicCategory[] = [
         desc: "Buchete care transformă fiecare clipă într-o amintire specială.",
         price: "50 lei - 150 lei",
         flowers: [
-            { name: "Eleganță 1", img: "/Eleganta/el1.webp", desc: "Aranjament floral, potrivit pentru orice ocazie." },
-            { name: "Eleganță 2", img: "/Eleganta/el2.webp", desc: "Buchet luminos, ideal pentru a aduce zâmbete." },
-            { name: "Eleganță 3", img: "/Eleganta/el3.webp", desc: "Delicate, perfectă pentru cadou." },
-            { name: "Eleganță 4", img: "/Eleganta/el4.webp", desc: "Compoziție rafinată pentru evenimente speciale." },
-            { name: "Eleganță 5", img: "/Eleganta/el5.webp", desc: "Buchet elegant, plin de culoare și prospețime." },
-            { name: "Eleganță 6", img: "/Eleganta/el6.webp", desc: "Aranjament vesel, potrivit pentru orice moment." },
-            { name: "Eleganță 7", img: "/Eleganta/el7.webp", desc: "Mix floral sofisticat pentru momente speciale." },
-            { name: "Eleganță 8", img: "/Eleganta/el8.webp", desc: "Buchet romantic, ideal pentru a impresiona." },
-            { name: "Eleganță 9", img: "/Eleganta/el9.webp", desc: "Aranjament solar, aduce energie pozitivă." },
-            { name: "Eleganță 10", img: "/Eleganta/el10.webp", desc: "Flori parfumate, pentru zile speciale." },
-            { name: "Eleganță 11", img: "/Eleganta/el12.webp", desc: "Buchet pastelat, delicat și elegant." },
-            { name: "Eleganță 12", img: "/Eleganta/el13.webp", desc: "Mixt de trandafiri, pentru momente unice." },
-            { name: "Eleganță 13", img: "/Eleganta/el14.webp", desc: "Aranjament bogat, plin de rafinament și stil." },
+            ...[
+                ...Array(51).fill(0).map((_, i) => ({
+                    name: `Momente de neuitat ${i + 1}`,
+                    img: `/MomenteDeNeuitat/mom${i + 1}.webp`,
+                    desc: `Aranjament floral special pentru orice ocazie (${i + 1})`
+                }))
+            ],
         ]
     },
     {

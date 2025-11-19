@@ -1,10 +1,14 @@
+"use client";
 import React from "react";
 import DeliveryInfo from "./DeliveryInfo";
 import Link from "next/link";
-import { dinamicCategory } from '../types/dinamicCat';
-import { dancingScript } from '../lib/fonts'
+import { dinamicCategory } from "../types/dinamicCat";
+import { dancingScript } from "../lib/fonts";
+import { usePathname } from "next/navigation";
 
 export default function Toolbar() {
+    const pathname = usePathname();
+
   return (
     <nav
       role="navigation"
@@ -15,7 +19,7 @@ export default function Toolbar() {
         <li>
           <Link
             href="/"
-            className={`text-xl px-4 py-2 rounded-sm text-yellow-500 font-semibold border-b-2 border-yellow-400/30 hover:border-yellow-400/80 transition ${dancingScript.className}`}
+            className={`text-xl px-4 py-2 rounded-sm font-semibold border-b-2 transition ${dancingScript.className} ${pathname === '/' ? 'bg-yellow-400 text-black border-yellow-400/80' : 'text-yellow-500 border-yellow-400/30 hover:border-yellow-400/80'}`}
           >
             Acasa
           </Link>
@@ -23,7 +27,7 @@ export default function Toolbar() {
         <li>
           <Link
             href="/catalog"
-            className={`text-xl px-4 py-2 rounded-sm bg-yellow-500 text-black font-semibold border-b-2 border-yellow-400/80 ${dancingScript.className}`}
+            className={`text-xl px-4 py-2 rounded-sm font-semibold border-b-2 transition ${dancingScript.className} ${pathname === '/catalog' ? 'bg-yellow-400 text-black border-yellow-400/80' : 'text-yellow-500 border-yellow-400/30 hover:border-yellow-400/80'}`}
           >
             Catalog
           </Link>
@@ -32,7 +36,7 @@ export default function Toolbar() {
           <li key={idx}>
             <Link
               href={`/catalog/${cat.slug}`}
-              className={`text-lg px-4 py-2 rounded-sm bg-black/70 border-b-2 border-yellow-400/30 hover:border-yellow-400/80 transition ${dancingScript.className}`}
+              className={`text-lg px-4 py-2 rounded-sm font-semibold border-b-2 transition ${dancingScript.className} ${pathname === `/catalog/${cat.slug}` ? "bg-yellow-400 text-black border-yellow-400/80" : "bg-black/70 text-yellow-500 border-yellow-400/30 hover:border-yellow-400/80"}`}
             >
               {cat.name}
             </Link>
