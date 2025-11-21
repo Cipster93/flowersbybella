@@ -1,27 +1,37 @@
 'use client'
-import Link from 'next/link';
-import React, { useState } from 'react'
-import { FaWhatsapp } from 'react-icons/fa'
+import React, { useState, useEffect } from 'react';
+import { FaWhatsapp } from 'react-icons/fa';
 
 export default function WhatupContact() {
-    const [show, setShow] = useState(true);
+    const [isMobile, setIsMobile] = useState(true); 
+    const [show, setShow] = useState(false);
+
+    useEffect(() => {
+        const checkMobile = () => {
+            const mobile = window.innerWidth < 1024;
+            setIsMobile(mobile);
+            if (!mobile) setShow(true); 
+        };
+
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
 
     return (
         <aside
             role="complementary"
             aria-label="Contact WhatsApp Flowers by Bella"
-            className="relative flex items-center gap-2 text-green-500 text-4xl cursor-pointer group"
-            onMouseEnter={() => setShow(true)}
+            className={`relative flex items-center gap-2 text-green-500 text-4xl cursor-pointer ${!isMobile ? 'group' : ''}`}
+            onMouseEnter={() => !isMobile && setShow(true)}
         >
-            <Link
-                href="https://wa.me/40712345678"
-                target="_blank"
-                rel="noopener noreferrer"
+            <span
+                onClick={() => isMobile && setShow((s) => !s)}
+                className={`transition-transform duration-300 ${!isMobile ? 'group-hover:scale-110 group-hover:text-green-400' : ''} drop-shadow-lg`}
                 aria-label="Deschide conversație WhatsApp"
-                className="transition-transform duration-300 group-hover:scale-110 group-hover:text-green-400 drop-shadow-lg"
             >
                 <FaWhatsapp />
-            </Link>
+            </span>
 
             {show && (
                 <div
@@ -57,5 +67,5 @@ export default function WhatupContact() {
                 </div>
             )}
         </aside>
-    )
+    );
 }
