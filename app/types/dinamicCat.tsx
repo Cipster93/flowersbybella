@@ -33,8 +33,7 @@ export const dinamicCategory: DinamicCategory[] = [
         name: "Eleganță",
         slug: "eleganta",
         img: "/Eleganta/el7.webp",
-        desc: "Buchete elegante, perfecte pentru evenimente rafinate și momente speciale.",
-        price: "50 lei - 150 lei",
+        desc: "Pozele și prețurile au caracter informativ, ele pot varia în funcție de cerințele clientului și de disponibilitatea florilor (florile de sezon sunt disponibile doar într-o anumită perioadă a anului).",
         flowers: [
             { name: "Eleganță 1", img: "/Eleganta/el1.webp", desc: "Aranjament floral, potrivit pentru orice ocazie." },
             { name: "Eleganță 2", img: "/Eleganta/el2.webp", desc: "Buchet luminos, ideal pentru a aduce zâmbete." },
@@ -52,11 +51,10 @@ export const dinamicCategory: DinamicCategory[] = [
         ]
     },
     {
-        name: "Momente de neuitat",
-        slug: "momente-de-neuitat",
+        name: "Nunți și Botezuri",
+        slug: "nunti-si-botezuri",
         img: "/Eleganta/el3.webp",
-        desc: "Buchete care transformă fiecare clipă într-o amintire specială.",
-        price: "50 lei - 150 lei",
+        desc: "Pozele și prețurile au caracter informativ; ele pot varia în funcție de cerințele clientului și de disponibilitatea florilor (florile de sezon sunt disponibile doar într-o anumită perioadă a anului).",
         flowers: [
             ...[
                 ...Array(51).fill(0).map((_, i) => ({
@@ -71,8 +69,7 @@ export const dinamicCategory: DinamicCategory[] = [
         name: "Rafinament",
         slug: "rafinament",
         img: "/Rafinament/rf5.webp",
-        desc: "Aranjamente florale ce reflectă luxul și exclusivitatea fiecărui detaliu.",
-        price: "50 lei - 150 lei",
+        desc: "Pozele și prețurile au caracter informativ, ele pot varia în funcție de cerințele clientului și de disponibilitatea florilor (florile de sezon sunt disponibile doar într-o anumită perioadă a anului).",
         flowers: [
             { name: "Rafinament 1", img: "/Rafinament/rf1.webp", desc: "Buchet cu flori în tonuri pastel, pentru o notă de rafinament" },
             { name: "Rafinament 2", img: "/Rafinament/rf2.webp", desc: "Aranjament cu flori de lux, pentru evenimente exclusiviste" },
@@ -95,8 +92,7 @@ export const dinamicCategory: DinamicCategory[] = [
         name: "Memorial",
         slug: "memorial",
         img: "/Memorial/m24.webp",
-        desc: "Flori pentru momente de reflecție, respect și amintire.",
-        price: "50 lei - 150 lei",
+        desc: "Pozele și prețurile au caracter informativ, ele pot varia în funcție de cerințele clientului și de disponibilitatea florilor (florile de sezon sunt disponibile doar într-o anumită perioadă a anului).",
         flowers: [
             { name: "Memorial 1", img: "/Memorial/m1.webp", desc: "Coroana eleganta, menit să aducă un omagiu discret" },
             { name: "Memorial 2", img: "/Memorial/m2.webp", desc: "Compoziție florală pentru ceremonii de adio" },

@@ -35,15 +35,15 @@ export default function About() {
         <p
           className={`text-xl sm:text-2xl md:text-2xl leading-relaxed ${caveat.className}`}
         >
-          Un loc unde visele infloresc in fiecare petala, iar pasiunea pentru
-          frumos se transforma in arta. Fiecare floare care ajunge in mainile
-          noastre este atent selectata, fiecare aranjament se naste din
-          inspiratie si dragostea creatorului sau, iar fiecare compozitie spune
-          o poveste unica. Aici, delicatețea intalneste eleganta, culorile si
-          aromele trezesc emotii, iar natura efemera a florii devine un moment
-          memorabil. Flowers by Bella nu este doar o florarie: este un vis
-          devenit realitate, un omagiu adus naturii si artei de a transmite
-          sentimente prin frumusete.
+          Un loc unde visele înfloresc în fiecare petală, iar pasiunea pentru
+          frumos se transformă în artă. Fiecare floare care ajunge în mâinile
+          noastre este atent selectată, fiecare aranjament se naște din
+          inspirație și dragostea creatorului său, iar fiecare compoziție spune
+          o poveste unică. Aici, delicatețea întâlnește eleganța, culorile și
+          aromele trezesc emoții, iar natura efemeră a florii devine un moment
+          memorabil. Flowers by Bella nu este doar o florărie: este un vis
+          devenit realitate, un omagiu adus naturii și artei de a transmite
+          sentimente prin frumusețe.
         </p>
       </section>
     </main>

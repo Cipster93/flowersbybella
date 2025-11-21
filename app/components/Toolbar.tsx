@@ -13,7 +13,7 @@ export default function Toolbar() {
     <nav
       role="navigation"
       aria-label="Meniu principal Flowers by Bella"
-      className="w-full bg-black py-4 flex flex-col md:flex-row justify-between px-6 items-center border-t-2 border-yellow-400/80"
+      className="w-full bg-black py-6 flex flex-col md:flex-row justify-between px-6 items-center border-t-2 border-yellow-400/80"
     >
       <ul className="flex flex-wrap gap-6 md:gap-2 justify-center md:justify-start">
         <li>
