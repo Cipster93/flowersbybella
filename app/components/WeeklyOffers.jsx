@@ -1,7 +1,7 @@
 import { dancingScript } from "../lib/fonts";
 import { getCurrentWeekString } from "../lib/dateUtils";
 import { weeklyOfferImages } from "../types/images";
-import WeeklyImage from "./WeeklyImage";
+import WeeklyImage from "./WeeklyImages";
 
 export default function WeeklyOffers() {
   const weekString = getCurrentWeekString();
