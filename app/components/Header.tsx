@@ -11,7 +11,7 @@ const Header = () => {
     >
       <div className="flex flex-col items-center justify-center gap-6 lg:hidden px-6 max-w-2xl">
         <Image
-          src="/logo2.png"
+          src="/logo.webp"
           alt="Flowers by Bella logo"
           width={300}
           height={300}

@@ -27,6 +27,7 @@ export default function WeeklyImage({ images }) {
       }`}
       width={400}
       height={300}
+      priority
     />
   );
 }

@@ -121,7 +121,7 @@ export default function CatalogQRCode() {
           className="flex-1 flex justify-center items-center relative z-10"
         >
           <Link href="/catalog" aria-label="Vezi catalogul Flowers by Bella">
-            <div className="p-8 bg-black/80 rounded-3xl flex flex-col items-center">
+            <div className="p-8 bg-black/80 rounded-3xl flex flex-col items-center" role="img" aria-label="Cod QR pentru catalog Flowers by Bella">
               <QRImage
                 text={url}
                 options={{
