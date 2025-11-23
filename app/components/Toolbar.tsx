@@ -69,7 +69,7 @@ export default function Toolbar() {
       </ul>
 
       {/* Delivery Info */}
-      <div className="mt-4 md:mt-0">
+      <div className="mt-4 md:mt-0 md:w-1/2">
         <DeliveryInfo />
       </div>
     </nav>

@@ -4,7 +4,7 @@ export type DinamicCategory = {
     img: string;
     desc: string;
     price?: string;
-    flowers?: { name: string; img: string; desc: string }[];
+    flowers?: { name: string; img: string; desc: string; price?: number }[];
 };
 export const momenteDeNeuitatImages = [
     "/momenteDeNeuitat/mom1.webp",
@@ -33,21 +33,22 @@ export const dinamicCategory: DinamicCategory[] = [
         name: "Eleganță",
         slug: "eleganta",
         img: "/Eleganta/el7.webp",
+        price: "Pret",
         desc: "Pozele și prețurile au caracter informativ, ele pot varia în funcție de cerințele clientului și de disponibilitatea florilor (florile de sezon sunt disponibile doar într-o anumită perioadă a anului).",
         flowers: [
-            { name: "Eleganță 1", img: "/Eleganta/el1.webp", desc: "Aranjament floral, potrivit pentru orice ocazie." },
-            { name: "Eleganță 2", img: "/Eleganta/el2.webp", desc: "Buchet luminos, ideal pentru a aduce zâmbete." },
-            { name: "Eleganță 3", img: "/Eleganta/el3.webp", desc: "Delicate, perfectă pentru cadou." },
-            { name: "Eleganță 4", img: "/Eleganta/el4.webp", desc: "Compoziție rafinată pentru evenimente speciale." },
-            { name: "Eleganță 5", img: "/Eleganta/el5.webp", desc: "Buchet elegant, plin de culoare și prospețime." },
-            { name: "Eleganță 6", img: "/Eleganta/el6.webp", desc: "Aranjament vesel, potrivit pentru orice moment." },
-            { name: "Eleganță 7", img: "/Eleganta/el7.webp", desc: "Mix floral sofisticat pentru momente speciale." },
-            { name: "Eleganță 8", img: "/Eleganta/el8.webp", desc: "Buchet romantic, ideal pentru a impresiona." },
-            { name: "Eleganță 9", img: "/Eleganta/el9.webp", desc: "Aranjament solar, aduce energie pozitivă." },
-            { name: "Eleganță 10", img: "/Eleganta/el10.webp", desc: "Flori parfumate, pentru zile speciale." },
-            { name: "Eleganță 11", img: "/Eleganta/el12.webp", desc: "Buchet pastelat, delicat și elegant." },
-            { name: "Eleganță 12", img: "/Eleganta/el13.webp", desc: "Mixt de trandafiri, pentru momente unice." },
-            { name: "Eleganță 13", img: "/Eleganta/el14.webp", desc: "Aranjament bogat, plin de rafinament și stil." },
+            { name: "Eleganță 3", img: "/Eleganta/el3.webp", desc: "Delicate, perfectă pentru cadou.", price: 150 },
+            { name: "Eleganță 4", img: "/Eleganta/el4.webp", desc: "Compoziție rafinată pentru evenimente speciale.", price: 150 },
+            { name: "Eleganță 6", img: "/Eleganta/el6.webp", desc: "Aranjament vesel, potrivit pentru orice moment.", price: 150 },
+            { name: "Eleganță 8", img: "/Eleganta/el8.webp", desc: "Buchet romantic, ideal pentru a impresiona.", price: 200 },
+            { name: "Eleganță 7", img: "/Eleganta/el7.webp", desc: "Mix floral sofisticat pentru momente speciale.", price: 200 },
+            { name: "Eleganță 9", img: "/Eleganta/el9.webp", desc: "Aranjament solar, aduce energie pozitivă.", price: 200 },
+            { name: "Eleganță 13", img: "/Eleganta/el14.webp", desc: "Aranjament bogat, plin de rafinament și stil.", price: 200 },
+            { name: "Eleganță 11", img: "/Eleganta/el12.webp", desc: "Buchet pastelat, delicat și elegant.", price: 250 },
+            { name: "Eleganță 1", img: "/Eleganta/el1.webp", desc: "Aranjament floral, potrivit pentru orice ocazie.", price: 250 },
+            { name: "Eleganță 5", img: "/Eleganta/el5.webp", desc: "Buchet elegant, plin de culoare și prospețime.", price: 300 },
+            { name: "Eleganță 10", img: "/Eleganta/el10.webp", desc: "Flori parfumate, pentru zile speciale.", price: 300 },
+            { name: "Eleganță 2", img: "/Eleganta/el2.webp", desc: "Buchet luminos, ideal pentru a aduce zâmbete.", price: 500 },
+            { name: "Eleganță 12", img: "/Eleganta/el13.webp", desc: "Mixt de trandafiri, pentru momente unice.", price: 500 },
         ]
     },
     {
@@ -71,7 +72,7 @@ export const dinamicCategory: DinamicCategory[] = [
         img: "/Rafinament/rf5.webp",
         desc: "Pozele și prețurile au caracter informativ, ele pot varia în funcție de cerințele clientului și de disponibilitatea florilor (florile de sezon sunt disponibile doar într-o anumită perioadă a anului).",
         flowers: [
-            { name: "Rafinament 1", img: "/Rafinament/rf1.webp", desc: "Buchet cu flori în tonuri pastel, pentru o notă de rafinament" },
+            { name: "Rafinament 1", img: "/Rafinament/rf1.webp", desc: "Buchet cu flori în tonuri pastel, pentru o notă de rafinament"},
             { name: "Rafinament 2", img: "/Rafinament/rf2.webp", desc: "Aranjament cu flori de lux, pentru evenimente exclusiviste" },
             { name: "Rafinament 3", img: "/Rafinament/rf3.webp", desc: "Buchet cu flori de sezon, într-o prezentare rafinată" },
             { name: "Rafinament 4", img: "/Rafinament/rf4.webp", desc: "Aranjament floral ce emană eleganță și bun gust" },
@@ -86,6 +87,7 @@ export const dinamicCategory: DinamicCategory[] = [
             { name: "Rafinament 13", img: "/Rafinament/rf13.webp", desc: "Aranjament cu flori rare și accesorii elegante" },
             { name: "Rafinament 14", img: "/Rafinament/rf14.webp", desc: "Buchet cu flori parfumate, pentru clipe rafinate" },
             { name: "Rafinament 15", img: "/Rafinament/rf15.webp", desc: "Buchet cu flori albe, simbol al rafinamentului" },
+            { name: "Rafinament 16", img: "/Rafinament/rf16.webp", desc: "Aranjament cu accente fine, perfect pentru aniversări" },
         ]
     },
     {

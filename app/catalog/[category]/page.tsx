@@ -42,6 +42,7 @@ export default function CategoryPage({ params }: CategoryParams) {
                             <h2 className={`${dancingScript.className} text-4xl font-semibold text-yellow-500 mb-1 text-center`}>
                                 {flower.name}
                             </h2>
+                            <p className={`${dancingScript.className} text-2xl font-semibold text-yellow-500 mb-1 text-center`}>Pret: <span className="text-white">{flower.price} lei</span></p>
                             <p className={`${caveat.className} text-xl text-gray-300 text-center p-2 h-auto`}>
                                 {flower.desc}
                             </p>
