@@ -156,7 +156,7 @@ export default function CategoryClient({ foundCategory, flowers }: CategoryClien
                     </p>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                         {flowers.map((flower, idx) => (
-                            <div key={idx} className="rounded-3xl shadow-2xl px-2 py-3 flex flex-col items-center border-t-2 border-b-2 border-yellow-500">
+                            <div key={idx} className="rounded-3xl px-2 py-3 flex flex-col items-center border-t-2 border-b-2 border-yellow-500">
                                 <Image
                                     src={flower.imgTop || flower.img || ""}
                                     alt={flower.name}

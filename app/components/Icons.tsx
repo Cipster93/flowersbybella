@@ -34,7 +34,7 @@ const SocialIcons = () => {
           target='_blank'
           rel='noopener noreferrer'
           aria-label={label}
-          className='hover:text-yellow-400 transition-colors duration-300 drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]'
+          className='hover:text-yellow-400 transition-colors duration-300'
         >
           <Icon />
         </a>

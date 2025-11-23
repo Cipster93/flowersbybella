@@ -20,7 +20,7 @@ export default function ImageModal({ image, onClose }: ImageModalProps) {
             <motion.img
                 src={image}
                 alt="Imagine mărită"
-                className="max-w-[90%] max-h-[85%] rounded-xl shadow-2xl"
+                className="max-w-[90%] max-h-[85%] rounded-xl"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.3, ease: 'easeOut' }}

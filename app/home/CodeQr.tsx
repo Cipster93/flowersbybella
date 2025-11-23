@@ -149,10 +149,10 @@ export default function CatalogQRCode() {
       {/* Secțiunea livrări */}
       <section
         aria-label="Informații livrări și contact"
-        className="mt-16 flex flex-col items-center justify-center gap-4 sm:gap-6 md:flex-row md:gap-10 text-center bg-black/60 border border-yellow-500/30 rounded-2xl px-4 py-5 sm:px-10 sm:py-6 shadow-[0_0_25px_rgba(255,215,0,0.1)]"
+        className="mt-16 flex flex-col items-center justify-center gap-4 sm:gap-6 md:flex-row md:gap-10 text-center bg-black/60 border border-yellow-500/30 rounded-2xl px-4 py-5 sm:px-10 sm:py-6"
       >
         <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
-          <FaTruck className="text-yellow-400 text-xl sm:text-2xl md:text-3xl drop-shadow" />
+          <FaTruck className="text-yellow-400 text-xl sm:text-2xl md:text-3xl" />
           <span
             className={`${caveat.className} font-semibold text-base sm:text-lg md:text-3xl tracking-wide text-white`}
           >

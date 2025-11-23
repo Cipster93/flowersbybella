@@ -24,13 +24,13 @@ const CatalogCategories = () => {
         {dinamicCategory.map((cat, idx) => (
           <div
             key={idx}
-            className="relative rounded-2xl shadow-lg p-3 flex flex-col items-center border-t-2 border-b-2 border-yellow-500 bg-black/70 overflow-hidden"
+            className="relative rounded-2xl p-3 flex flex-col items-center border-t-2 border-b-2 border-yellow-500 bg-black/70 overflow-hidden"
           >
             {/* Panglica roșie elegantă pe diagonală doar la primul card */}
             {/* {idx === 0 && (
               <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-10 flex justify-start items-start">
                 <div
-                  className="absolute bg-gradient-to-r from-red-700 to-red-500 text-white font-bold uppercase tracking-widest shadow-lg text-sm md:text-base"
+                  className="absolute bg-gradient-to-r from-red-700 to-red-500 text-white font-bold uppercase tracking-widest text-sm md:text-base"
                   style={{
                     transform: "rotate(-45deg) translate(-65px, -15px)",
                     width: "220px",

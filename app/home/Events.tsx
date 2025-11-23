@@ -16,7 +16,7 @@ const Events = () => {
           alt="Decor floral Flowers by Bella pentru evenimente"
           width={380}
           height={380}
-          className="w-full max-w-sm h-160 object-contain rounded-xl shadow-lg"
+          className="w-full max-w-sm h-160 object-contain rounded-xl"
         />
       </div>
 
@@ -51,7 +51,7 @@ const Events = () => {
           alt="Decor floral Flowers by Bella pentru evenimente"
           width={380}
           height={380}
-          className="w-full max-w-sm h-160 object-contain rounded-xl shadow-lg"
+          className="w-full max-w-sm h-160 object-contain rounded-xl"
         />
       </div>
     </section>

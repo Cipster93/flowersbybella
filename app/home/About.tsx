@@ -16,7 +16,7 @@ export default function About() {
         <Image
           src="/about.webp"
           alt="Flowers by Bella"
-          className="object-cover rounded-xl shadow-2xl"
+          className="object-cover rounded-xl"
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
         />

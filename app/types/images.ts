@@ -14,7 +14,8 @@ export type Image =
   | "/Swiper/flower4.webp"
   | "/Swiper/flower5.webp"
   | "/Swiper/flower6.webp"
-  | "/Swiper/flower7.webp";
+  | "/Swiper/flower7.webp"
+  | "/Swiper/flower3.webp";
 
 export const images: Image[] = [
   "/Swiper/flower1.webp",
@@ -24,4 +25,5 @@ export const images: Image[] = [
   "/Swiper/flower5.webp",
   "/Swiper/flower6.webp",
   "/Swiper/flower7.webp",
+  "/Swiper/flower3.webp",
 ];

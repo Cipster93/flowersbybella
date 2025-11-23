@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import { images } from "../types/images";
+import Image from "next/image";
 
 export default function CoursesHeader() {
   return (
@@ -40,10 +41,12 @@ export default function CoursesHeader() {
               key={index}
               className="flex items-center justify-center"
             >
-              <img
+              <Image
                 src={src}
                 alt={`Imagine curs ${index + 1}`}
-                className="w-full h-48 sm:h-80 md:h-72 lg:h-78 object-cover rounded-xl shadow-md"
+                className="w-full h-48 sm:h-80 md:h-72 lg:h-78 object-cover rounded-xl"
+                width={300}
+                height={300}
               />
             </SwiperSlide>
           ))}
