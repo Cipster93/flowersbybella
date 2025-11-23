@@ -16,7 +16,7 @@ import { dancingScript, caveat } from "../lib/fonts";
 
 export default function CatalogQRCode() {
   const { Image: QRImage } = useQRCode();
-  const url = "https://google.com";
+  const url = "https://flowersbybella.vercel.app/catalog";
 
   return (
     <main

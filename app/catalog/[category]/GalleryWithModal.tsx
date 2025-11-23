@@ -47,7 +47,7 @@ export default function CategoryClient({ foundCategory, flowers }: CategoryClien
                                 .map((flower, idx) => (
                                     <div key={idx} className="rounded-3xl px-2 py-3 flex flex-col items-center border-t-2 border-b-2 border-yellow-500 bg-black/80">
                                         <h2 className={`${dancingScript.className} text-3xl font-semibold text-yellow-500 mb-1 text-center`}>
-                                            {flower.name}
+                                            {flower.name} - {idx + 1}
                                         </h2>
                                         <Image
                                             src={flower.imgTop || ""}
@@ -87,7 +87,7 @@ export default function CategoryClient({ foundCategory, flowers }: CategoryClien
                                 .map((flower, idx) => (
                                     <div key={idx} className="rounded-3xl px-2 py-3 flex flex-col items-center border-t-2 border-b-2 border-yellow-500 bg-black/80">
                                         <h2 className={`${dancingScript.className} text-3xl font-semibold text-yellow-500 mb-1 text-center`}>
-                                            {flower.name}
+                                            {flower.name} - {idx + 1}
                                         </h2>
                                         <Image
                                             src={flower.img || ""}
@@ -116,7 +116,7 @@ export default function CategoryClient({ foundCategory, flowers }: CategoryClien
                                 .map((flower, idx) => (
                                     <div key={idx} className="rounded-3xl px-2 py-3 flex flex-col items-center border-t-2 border-b-2 border-yellow-500 bg-black/80">
                                         <h2 className={`${dancingScript.className} text-3xl font-semibold text-yellow-500 mb-1 text-center`}>
-                                            {flower.name}
+                                            {flower.name} - {idx + 1}
                                         </h2>
                                         <Image
                                             src={flower.img || ""}
@@ -166,7 +166,7 @@ export default function CategoryClient({ foundCategory, flowers }: CategoryClien
                                     onClick={() => setModalImage(flower.img ?? "")}
                                 />
                                 <h2 className={`${dancingScript.className} text-4xl font-semibold text-yellow-500 mb-1 text-center`}>
-                                    {flower.name}
+                                    {flower.name} - {idx + 1}
                                 </h2>
                                 <p className={`${dancingScript.className} text-2xl font-semibold text-yellow-500 mb-1 text-center`}>
                                     Preț: <span className="text-white">{flower.price} lei</span>
