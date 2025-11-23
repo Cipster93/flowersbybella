@@ -27,7 +27,7 @@ const CatalogCategories = () => {
             className="relative rounded-2xl shadow-lg p-3 flex flex-col items-center border-t-2 border-b-2 border-yellow-500 bg-black/70 overflow-hidden"
           >
             {/* Panglica roșie elegantă pe diagonală doar la primul card */}
-            {idx === 0 && (
+            {/* {idx === 0 && (
               <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-10 flex justify-start items-start">
                 <div
                   className="absolute bg-gradient-to-r from-red-700 to-red-500 text-white font-bold uppercase tracking-widest shadow-lg text-sm md:text-base"
@@ -42,7 +42,7 @@ const CatalogCategories = () => {
                   Oferte
                 </div>
               </div>
-            )}
+            )} */}
 
             <Image
               src={cat.img}
@@ -69,13 +69,6 @@ const CatalogCategories = () => {
               >
                 {cat.desc}
               </p>
-              {cat.price && (
-                <span
-                  className={`${dancingScript.className} block text-yellow-400 font-bold text-lg md:text-xl mb-4 rounded-full px-4 py-1`}
-                >
-                  {cat.price}
-                </span>
-              )}
               {/* Pentru primul card, spațiu liber pentru a împinge butonul jos */}
               {idx === 0 && <div className="flex-grow" />}
             </div>
