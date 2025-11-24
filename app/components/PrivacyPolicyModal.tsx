@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 interface PrivacyPolicyModalProps {
@@ -18,9 +19,21 @@ export default function PrivacyPolicyModal({ open, onClose }: PrivacyPolicyModal
       <section className="rounded-xl max-w-2xl bg-black w-full p-8 relative">
         {/* Header modal */}
         <header className="flex justify-between items-center mb-4">
-          <h1 className="text-2xl font-bold text-yellow-500 font-serif">
-            Politica de Confidentialitate
-          </h1>
+          <div className='flex flex-col'>
+            <h1 className="text-2xl font-bold text-yellow-500 font-serif">
+              Politica de Confidentialitate
+            </h1>
+            <p className="mt-4 text-center">
+              <Link
+                href="/privacy-policy"
+                className="text-yellow-400 underline hover:text-yellow-300 transition"
+                rel="noopener noreferrer"
+                onClick={onClose}
+              >
+                Citește politica de confidențialitate detaliată
+              </Link>
+            </p>
+          </div>
           <button
             onClick={onClose}
             className="text-yellow-500 font-bold text-xl"
@@ -29,9 +42,8 @@ export default function PrivacyPolicyModal({ open, onClose }: PrivacyPolicyModal
             ×
           </button>
         </header>
-
         {/* Main content */}
-        <main className="text-gray-300 text-base max-h-[70vh] overflow-y-auto space-y-4">
+        <main className="text-gray-300 text-base max-h-[70vh] overflow-y-auto space-y-4 text-left ">
           <p>
             Flowers by Bella respecta confidentialitatea datelor dumneavoastra personale. Datele nu sunt stocate nicaieri permanent. Sunt preluate doar pentru procesarea platilor si a livrarilor.
           </p>
@@ -91,6 +103,7 @@ export default function PrivacyPolicyModal({ open, onClose }: PrivacyPolicyModal
           <p>
             Prin utilizarea site-ului Flowers by Bella, confirmati ca ati citit si sunteti de acord cu aceasta politica de confidentialitate.
           </p>
+
         </main>
       </section>
     </div>

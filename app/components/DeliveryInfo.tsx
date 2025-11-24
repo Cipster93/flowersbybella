@@ -20,14 +20,7 @@ const DeliveryInfo = () => {
           Comenzi si Livrari la domiciliu
         </span>
       </section>
-
-      <Link
-        href="tel:0728361107"
-        className="flex-shrink-0 flex items-center gap-2 px-3 py-1 rounded-full text-yellow-500 font-bold text-base "
-        itemProp="telephone"
-      >
-        0728-361-107 <FaWhatsapp className="text-yellow-500 text-lg" />
-      </Link>
+        <span className={`text-yellow-500 text-xl ${dancingScript.className}`}>0728-361-107</span> <FaWhatsapp className="text-yellow-500 text-2xl" />
     </main>
   );
 };

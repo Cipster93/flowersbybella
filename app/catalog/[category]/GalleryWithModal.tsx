@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Head from "next/head";
 import Image from "next/image";
 import ImageModal from "../../components/ImageModal";
 import { dancingScript, caveat } from "@/app/lib/fonts";
@@ -11,7 +12,6 @@ interface CategoryClientProps {
     flowers: { name: string; img?: string; imgTop?: string; imgBottom?: string; desc: string; price?: number }[];
 }
 
-import Head from "next/head";
 
 export default function CategoryClient({ foundCategory, flowers }: CategoryClientProps) {
     const [modalImage, setModalImage] = useState<string | null>(null);
@@ -68,8 +68,18 @@ export default function CategoryClient({ foundCategory, flowers }: CategoryClien
                                             className="w-72 h-72 md:w-80 md:h-72 object-cover rounded-2xl mt-2 cursor-pointer"
                                             onClick={() => setModalImage(flower.imgBottom ?? "")}
                                         />
-                                        <p className={`${dancingScript.className} text-xl font-semibold text-yellow-500 text-center py-2`}>
+                                        <p className={`${dancingScript.className} text-3xl font-semibold text-yellow-500 text-center py-2`}>
                                             Preț: <span className="text-white">{flower.price} lei</span>
+                                        </p>
+                                        <p className={`${dancingScript.className} text-2xl font-semibold text-yellow-500 text-center py-2`}>
+                                            <a
+                                                href="https://wa.me/40728361107"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="hover:text-yellow-400 transition"
+                                            >
+                                                Comandă aici
+                                            </a>
                                         </p>
                                     </div>
                                 ))}
@@ -97,8 +107,18 @@ export default function CategoryClient({ foundCategory, flowers }: CategoryClien
                                             className="w-72 h-72 md:w-80 md:h-72 object-cover rounded-2xl mb-2 cursor-pointer"
                                             onClick={() => setModalImage(flower.img ?? "")}
                                         />
-                                        <p className={`${dancingScript.className} text-xl font-semibold text-yellow-500 text-center py-2`}>
+                                        <p className={`${dancingScript.className} text-3xl font-semibold text-yellow-500 text-center py-2`}>
                                             Preț: <span className="text-white">{flower.price} lei</span>
+                                        </p>
+                                        <p className={`${dancingScript.className} text-2xl font-semibold text-yellow-500 text-center py-2`}>
+                                            <a
+                                                href="https://wa.me/40728361107"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="hover:text-yellow-400 transition"
+                                            >
+                                                Comandă aici
+                                            </a>
                                         </p>
                                     </div>
                                 ))}
@@ -126,8 +146,18 @@ export default function CategoryClient({ foundCategory, flowers }: CategoryClien
                                             className="w-72 h-72 md:w-80 md:h-72 object-cover rounded-2xl mb-2 cursor-pointer"
                                             onClick={() => setModalImage(flower.img ?? "")}
                                         />
-                                        <p className={`${dancingScript.className} text-xl font-semibold text-yellow-500 text-center py-2`}>
+                                        <p className={`${dancingScript.className} text-3xl font-semibold text-yellow-500 text-center py-2`}>
                                             Preț: <span className="text-white">{flower.price} lei</span>
+                                        </p>
+                                        <p className={`${dancingScript.className} text-2xl font-semibold text-yellow-500 text-center py-2`}>
+                                            <a
+                                                href="https://wa.me/40728361107"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="hover:text-yellow-400 transition"
+                                            >
+                                                Comandă aici
+                                            </a>
                                         </p>
                                     </div>
                                 ))}
@@ -173,6 +203,16 @@ export default function CategoryClient({ foundCategory, flowers }: CategoryClien
                                 </p>
                                 <p className={`${caveat.className} text-xl text-gray-300 text-center p-2 h-auto`}>
                                     {flower.desc}
+                                </p>
+                                <p className={`${dancingScript.className} text-2xl font-semibold text-yellow-500 text-center py-2`}>
+                                    <a
+                                        href="https://wa.me/40728361107"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="hover:text-yellow-400 transition"
+                                    >
+                                        Comandă aici
+                                    </a>
                                 </p>
                             </div>
                         ))}

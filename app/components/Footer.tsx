@@ -32,14 +32,14 @@ const Footer = () => {
             Flowers by Bella
           </h2>
           <p className="text-xs text-gray-300 italic max-w-xs">
-            Emotie, rafinament si eleganta in fiecare petala.
+            Emoție, rafinament și eleganță în fiecare petală.
           </p>
           <div className="flex items-center gap-2">
             <button
               className="text-yellow-400 underline text-xs"
               onClick={() => setOpen(true)}
             >
-              Politica de confidentialitate
+              Politica de confidențialitate
             </button>
             <PrivacyPolicyModal open={open} onClose={() => setOpen(false)} />
           </div>
@@ -77,17 +77,17 @@ const Footer = () => {
           </div>
           <div className="flex items-center gap-2">
             <FaMapMarkerAlt className="text-yellow-400 text-sm" />
-            <span>Bul. Independentei nr. 15A</span>
+            <span>Bd. Independenței nr. 15A</span>
           </div>
         </address>
 
         {/* Social Section */}
         <nav
-          aria-label="Retele sociale Flowers by Bella"
+          aria-label="Rețele sociale Flowers by Bella"
           className="flex flex-col items-center md:items-end space-y-2"
         >
           <h3 className="text-yellow-400 font-semibold text-sm uppercase tracking-wide">
-            Urmareste-ne
+            Urmărește-ne
           </h3>
           <SocialIcons />
           <div className="flex gap-4 mt-4 h-auto">
@@ -98,7 +98,7 @@ const Footer = () => {
             >
               <Image
                 src="/anpc-sal.svg"
-                alt="Floraria"
+                alt="Florăria"
                 width={90}
                 height={90}
                 className="w-52 h-24 object-contain"
