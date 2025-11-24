@@ -1,4 +1,4 @@
-/* Swiper core styles importate global pentru optimizare LCP */
+/* Swiper core styles importate global pentru optimizare LCP
 :root {
   --swiper-theme-color: #007aff
 }
@@ -247,7 +247,7 @@
   to {
     transform: rotate(1turn)
   }
-}
+} */
 
 @import "tailwindcss";
 
