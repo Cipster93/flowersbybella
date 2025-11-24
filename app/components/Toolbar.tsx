@@ -28,13 +28,15 @@ export default function Toolbar() {
       </div>
 
       <ul
-        className={`flex flex-col md:flex-row gap-6 md:gap-2 justify-center md:justify-start w-full overflow-hidden transition-[max-height,opacity,margin] duration-300 ease-in-out ${menuOpen ? "max-h-[1000px] opacity-100 mt-2" : "max-h-0 opacity-0 mt-0 md:max-h-full md:opacity-100"
+        className={`flex py-2 flex-col md:flex-row gap-6 md:gap-2 justify-center md:justify-start w-full overflow-hidden transition-[max-height,opacity,margin] duration-300 ease-in-out ${menuOpen ? "max-h-[1000px] opacity-100 mt-2" : "max-h-0 opacity-0 mt-0 md:max-h-full md:opacity-100"
           }`}
       >
         <li>
           <Link
             href="/"
-            className={`text-xl px-4 py-2 rounded-3xl font-semibold border-b-2  ${dancingScript.className} ${pathname === '/' ? 'bg-yellow-400 text-black border-yellow-400/80' : 'text-yellow-500 border-yellow-400/80 '
+            className={`text-xl px-4 py-2 rounded-3xl font-semibold border-b-2 ${dancingScript.className} ${pathname === '/'
+                ? 'bg-yellow-400 text-black border-yellow-400/80'
+                : 'text-yellow-500 border-b-transparent'
               }`}
           >
             Acasă
@@ -43,7 +45,9 @@ export default function Toolbar() {
         <li>
           <Link
             href="/catalog"
-            className={`text-xl px-4 py-2 rounded-3xl font-semibold border-b-2  ${dancingScript.className} ${pathname === '/catalog' ? 'bg-yellow-400 text-black border-yellow-400/80' : 'text-yellow-500 border-yellow-400/80'
+            className={`text-xl px-4 py-2 rounded-3xl font-semibold border-b-2 ${dancingScript.className} ${pathname === '/catalog'
+                ? 'bg-yellow-400 text-black border-yellow-400/80'
+                : 'text-yellow-500 border-b-transparent'
               }`}
           >
             Catalog
@@ -53,7 +57,9 @@ export default function Toolbar() {
           <li key={idx}>
             <Link
               href={`/catalog/${cat.slug}`}
-              className={`md:text-2xl text-xl px-4 py-2 h-auto rounded-3xl font-semibold border-b-2 ${dancingScript.className} ${pathname === `/catalog/${cat.slug}` ? "bg-yellow-400 text-black border-yellow-400/80" : "bg-black/70 text-yellow-500 border-yellow-400/80"
+              className={`md:text-2xl text-xl px-4 py-2 h-auto rounded-3xl font-semibold border-b-2 ${dancingScript.className} ${pathname === `/catalog/${cat.slug}`
+                  ? "bg-yellow-400 text-black border-yellow-400/80"
+                  : "bg-black/70 text-yellow-500 border-b-transparent"
                 }`}
             >
               {cat.name}

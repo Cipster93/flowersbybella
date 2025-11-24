@@ -4,12 +4,12 @@ import React, { useEffect, useRef, useState } from "react";
 import { images } from "../types/images";
 import Image from "next/image";
 
-const CustomAutoSwiper: React.FC = () => {
+function CustomAutoSwiper() {
     const [current, setCurrent] = useState(0);
     const [slidesPerView, setSlidesPerView] = useState(1);
     const timeoutRef = useRef<NodeJS.Timeout | null>(null);
     const slideCount = images.length;
-    const delay = 3000; // 3 sec
+    const delay = 4000; 
 
     // Responsive breakpoints
     useEffect(() => {
@@ -34,27 +34,7 @@ const CustomAutoSwiper: React.FC = () => {
         };
     }, [current, slideCount]);
 
-    // Touch/drag support (optional, basic)
-    const startX = useRef<number | null>(null);
-    const handleTouchStart = (e: React.TouchEvent) => {
-        startX.current = e.touches[0].clientX;
-    };
-    const handleTouchEnd = (e: React.TouchEvent) => {
-        if (startX.current === null) return;
-        const diff = e.changedTouches[0].clientX - startX.current;
-        if (diff > 50) setCurrent((prev) => (prev - 1 + slideCount) % slideCount);
-        if (diff < -50) setCurrent((prev) => (prev + 1) % slideCount);
-        startX.current = null;
-    };
-
-    // Carusel: afișăm toate slide-urile în linie și translatăm containerul
-    const totalSlides = images.length;
-    // Pentru efect de loop, duplicăm primele slide-uri la final
     const extendedImages = [...images, ...images.slice(0, slidesPerView)];
-    // Calculăm lățimea unui slide (inclusiv gap)
-    const slideWidthPercent = 100 / slidesPerView;
-    // Pentru translateX, mutăm containerul cu indexul curent
-    const getTranslateX = () => `-${current * (slideWidthPercent + (10 * 100 / window.innerWidth))}%`;
 
     return (
         <header
@@ -66,27 +46,28 @@ const CustomAutoSwiper: React.FC = () => {
             <section
                 aria-label="Imagini cursuri custom"
                 className="relative w-full overflow-hidden"
-                onTouchStart={handleTouchStart}
-                onTouchEnd={handleTouchEnd}
             >
                 <div className="absolute w-full inset-0 pointer-events-none bg-gradient-to-r from-black via-transparent to-black z-10"></div>
                 <div
-                    className="flex w-full gap-10"
+                    className={`flex ${slidesPerView === 1 ? 'w-full' : 'gap-5 w-full'}`}
                     style={{
-                        transition: 'transform 0.7s cubic-bezier(0.4, 0, 0.2, 1)',
-                        transform: `translateX(-${current * (100 / slidesPerView)}%)`
+                        transition: 'transform 1s cubic-bezier(0.4, 0, 0.2, 1)',
+                        transform:
+                            slidesPerView === 1
+                                ? `translateX(-${current * 100}%)`
+                                : `translateX(-${current * (100 / slidesPerView)}%)`
                     }}
                 >
                     {extendedImages.map((src, index) => (
                         <div
                             key={index}
                             className="flex-shrink-0 flex items-center justify-center"
-                            style={{ width: `${100 / slidesPerView}%` }}
+                            style={{ width: slidesPerView === 1 ? '100%' : `${100 / slidesPerView}%` }}
                         >
                             <Image
                                 src={src}
                                 alt={`Imagine curs ${index + 1}`}
-                                className="w-full h-48 sm:h-80 md:h-72 lg:h-78 object-cover rounded-xl"
+                                className="w-full h-48 sm:h-80 md:h-72 lg:h-98 object-cover rounded-xl"
                                 width={300}
                                 height={300}
                             />
@@ -96,6 +77,6 @@ const CustomAutoSwiper: React.FC = () => {
             </section>
         </header>
     );
-};
+}
 
 export default CustomAutoSwiper;

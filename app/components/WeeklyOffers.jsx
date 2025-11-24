@@ -35,18 +35,18 @@ export default function WeeklyOffers() {
           săptămâna aceasta!
         </p>
 
-        <section className="flex flex-wrap items-center gap-4 mt-2 w-full">
+        <section className="flex flex-col md:flex-row items-center gap-4 mt-2 w-full">
           <div
             className={`text-xl rounded-lg px-4 py-2 text-gray-400 font-semibold text-center border-2 border-gray-400 flex-1 min-w-[120px] ${dancingScript.className}`}
           >
-            Bonus: comenzi peste <span className="text-yellow-600">150 lei</span> –  
+            Bonus: comenzi peste <span className="text-yellow-600">150 lei</span> –
             O cutie de bomboane cadou
           </div>
 
           <div
             className={`text-xl rounded-lg px-4 py-2 text-gray-400 font-semibold text-center border-2 border-gray-400 flex-1 min-w-[120px] ${dancingScript.className}`}
           >
-            Bonus: comenzi peste <span className="text-yellow-600">250 lei</span> –  
+            Bonus: comenzi peste <span className="text-yellow-600">250 lei</span> –
             O sticlă de vin / șampanie
           </div>
         </section>
