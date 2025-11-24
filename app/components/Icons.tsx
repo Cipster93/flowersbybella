@@ -10,7 +10,7 @@ const SocialIcons = () => {
     },
     {
       Icon: FaWhatsappSquare,
-      link: 'https://wa.me/407XXXXXXXX',
+      link: "https://wa.me/40728361107",
       label: 'Contact WhatsApp Flowers by Bella'
     },
     // {

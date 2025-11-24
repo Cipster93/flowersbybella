@@ -1,13 +1,13 @@
-'use client'
-import React, { useState } from 'react'
-import Image from 'next/image'
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
-import SocialIcons from '../components/Icons'
-import PrivacyPolicyModal from './PrivacyPolicyModal'
-import Link from 'next/link'
+"use client";
+import React, { useState } from "react";
+import Image from "next/image";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import SocialIcons from "../components/Icons";
+import PrivacyPolicyModal from "./PrivacyPolicyModal";
+import Link from "next/link";
 
 const Footer = () => {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
   return (
     <footer
@@ -17,9 +17,20 @@ const Footer = () => {
     >
       <main className="w-[80%] mx-auto flex flex-col md:flex-row justify-between items-center gap-6 md:gap-10">
         {/* Brand Section */}
-        <section aria-label="Despre Flowers by Bella" className="flex flex-col items-center md:items-start text-center md:text-left space-y-1">
-          <Image src='/logo.webp' alt="Logo Flowers by Bella" width={130} height={70} className="rounded-md" />
-          <h2 className="text-2xl font-serif font-bold text-yellow-400 tracking-wide">Flowers by Bella</h2>
+        <section
+          aria-label="Despre Flowers by Bella"
+          className="flex flex-col items-center md:items-start text-center md:text-left space-y-1"
+        >
+          <Image
+            src="/logo.webp"
+            alt="Logo Flowers by Bella"
+            width={130}
+            height={70}
+            className="rounded-md"
+          />
+          <h2 className="text-2xl font-serif font-bold text-yellow-400 tracking-wide">
+            Flowers by Bella
+          </h2>
           <p className="text-xs text-gray-300 italic max-w-xs">
             Emotie, rafinament si eleganta in fiecare petala.
           </p>
@@ -35,18 +46,33 @@ const Footer = () => {
         </section>
 
         {/* Contact Section */}
-        <address aria-label="Date de contact Flowers by Bella" className="flex flex-col items-center md:items-start space-y-1 text-gray-300 text-sm not-italic">
-          <h3 className="text-yellow-400 font-semibold text-sm uppercase tracking-wide">Contact</h3>
+        <address
+          aria-label="Date de contact Flowers by Bella"
+          className="flex flex-col items-center md:items-start space-y-1 text-gray-300 text-sm not-italic"
+        >
+          <h3 className="text-yellow-400 font-semibold text-sm uppercase tracking-wide">
+            Contact
+          </h3>
           <div className="flex items-center gap-2">
             <FaPhoneAlt className="text-yellow-400 text-sm" />
-            <a href="tel:+40728361107" className="hover:text-yellow-400 transition">
+            <a
+              href="https://wa.me/40728361107"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-yellow-400 transition"
+            >
               0728-361-107
             </a>
           </div>
           <div className="flex items-center gap-2">
             <FaEnvelope className="text-yellow-400 text-sm" />
-            <a href="mailto:a@yahoo.com" className="hover:text-yellow-400 transition">
-              a@yahoo.com
+            <a
+              href="https://mail.google.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-yellow-400 transition"
+            >
+              flowers.artbybella@gmail.com
             </a>
           </div>
           <div className="flex items-center gap-2">
@@ -56,15 +82,40 @@ const Footer = () => {
         </address>
 
         {/* Social Section */}
-        <nav aria-label="Retele sociale Flowers by Bella" className="flex flex-col items-center md:items-end space-y-2">
-          <h3 className="text-yellow-400 font-semibold text-sm uppercase tracking-wide">Urmareste-ne</h3>
+        <nav
+          aria-label="Retele sociale Flowers by Bella"
+          className="flex flex-col items-center md:items-end space-y-2"
+        >
+          <h3 className="text-yellow-400 font-semibold text-sm uppercase tracking-wide">
+            Urmareste-ne
+          </h3>
           <SocialIcons />
           <div className="flex gap-4 mt-4 h-auto">
-            <a href='https://reclamatiisal.anpc.ro/' target='_blank' rel="noopener noreferrer">
-              <Image src="/anpc-sal.svg" alt="Floraria" width={90} height={90} className='w-52 h-24 object-contain' />
+            <a
+              href="https://reclamatiisal.anpc.ro/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="/anpc-sal.svg"
+                alt="Floraria"
+                width={90}
+                height={90}
+                className="w-52 h-24 object-contain"
+              />
             </a>
-            <a href="https://consumer-redress.ec.europa.eu/site-relocation_en" target='_blank' rel="noopener noreferrer">
-              <Image src="/anpc-sol.svg" alt="Glovo" width={90} height={90} className='w-52 h-24 object-contain' />
+            <a
+              href="https://consumer-redress.ec.europa.eu/site-relocation_en"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="/anpc-sol.svg"
+                alt="Glovo"
+                width={90}
+                height={90}
+                className="w-52 h-24 object-contain"
+              />
             </a>
           </div>
         </nav>
@@ -72,10 +123,11 @@ const Footer = () => {
 
       {/* Copyright */}
       <div className="mt-6 text-center text-yellow-500 text-[10px] tracking-wide">
-        &copy; {new Date().getFullYear()} Flowers by Bella — Toate drepturile rezervate.
+        &copy; {new Date().getFullYear()} Flowers by Bella — Toate drepturile
+        rezervate.
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

@@ -56,7 +56,7 @@ export default function Toolbar() {
           <li key={idx}>
             <Link
               href={`/catalog/${cat.slug}`}
-              className={`md:text-2xl text-xl px-4 py-2 rounded-3xl font-semibold border-b-2 ${dancingScript.className} ${
+              className={`md:text-2xl text-xl px-4 py-2 h-auto rounded-3xl font-semibold border-b-2 ${dancingScript.className} ${
                 pathname === `/catalog/${cat.slug}` ? "bg-yellow-400 text-black border-yellow-400/80" : "bg-black/70 text-yellow-500 border-yellow-400/80"
               }`}
             >
@@ -66,7 +66,7 @@ export default function Toolbar() {
         ))}
       </ul>
 
-      <div className="mt-4 md:mt-0 md:w-1/2">
+      <div className="mt-4 md:mt-0 md:w-2/3">
         <DeliveryInfo />
       </div>
     </nav>
