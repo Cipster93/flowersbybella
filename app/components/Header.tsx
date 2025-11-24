@@ -29,7 +29,7 @@ const Header = () => {
       <div className="hidden lg:flex relative w-full lg:w-1/2 h-[500px] flex-shrink-0">
         <div className="relative w-full h-full flex items-center justify-center p-8">
           <Image
-            src="/logo2.png"
+            src="/logo.webp"
             alt="Flowers by Bella logo"
             width={500}
             height={500}
