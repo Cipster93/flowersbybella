@@ -3,7 +3,7 @@ import { dinamicCategory } from "@/app/types/dinamicCat";
 import CategoryClient from "./GalleryWithModal";
 
 export const generateMetadata = async ({ params }: { params: { category: string } }) => {
-  const slug = params.category;
+  const { category: slug } = await params;
   const category = {
     name: slug.charAt(0).toUpperCase() + slug.slice(1),
     description: `Discover our ${slug} collection.`,
@@ -21,8 +21,9 @@ export const generateMetadata = async ({ params }: { params: { category: string 
   };
 };
 
-export default function CategoryPage({ params }: { params: { category: string } }) {
-  const foundCategory = dinamicCategory.find(cat => cat.slug === params.category);
+export default async function CategoryPage({ params }: { params: { category: string } }) {
+  const { category } = await params;
+  const foundCategory = dinamicCategory.find(cat => cat.slug === category);
   if (!foundCategory) return notFound();
   const flowers = foundCategory.flowers || [];
 

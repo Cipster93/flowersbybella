@@ -28,7 +28,6 @@ export default function WhatupContact() {
             <span
                 onClick={() => isMobile && setShow((s) => !s)}
                 className={`transition-transform duration-300 ${!isMobile ? 'group-hover:scale-110 group-hover:text-green-400' : ''} `}
-                aria-label="Deschide conversație WhatsApp"
             >
                 <FaWhatsapp />
             </span>
