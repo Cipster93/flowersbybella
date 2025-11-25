@@ -1,32 +1,51 @@
 "use client";
-import { useEffect, useState, useRef } from "react";
+
 import Image from "next/image";
 
-export default function WeeklyImage({ images }) {
-  const [index, setIndex] = useState(0);
-  const timeoutRef = useRef();
-
-  useEffect(() => {
-    timeoutRef.current = setInterval(() => {
-      setIndex((v) => (v + 1) % images.length);
-    }, 4000);
-    return () => clearInterval(timeoutRef.current);
-  }, [images.length]);
+export default function WeeklyImage({ images = [] }) {
+  const duration = 4;
 
   return (
-    <div className="relative w-full max-w-md h-44 lg:h-96">
-      {images.map((img, i) => (
-        <Image
-          key={img}
-          src={img}
-          alt="Oferte săptămânii"
-          className={`rounded-xl object-cover absolute top-0 left-0 w-full h-full transition-opacity duration-500 ${
-            i === index ? "opacity-100 z-10" : "opacity-0 z-0"
-          }`}
-          width={400}
-          height={300}
-        />
+    <div className="relative w-full max-w-md h-44 lg:h-96 overflow-hidden rounded-xl">
+      {images.map((src, i) => (
+        <div
+          key={i}
+          className="absolute inset-0 w-full h-full"
+          style={{
+            animation: `wb-fade ${images.length * duration}s linear infinite`,
+            animationDelay: `${i * duration}s`,
+          }}
+        >
+          <Image
+            src={src}
+            alt={`Oferte săptămânii ${i + 1}`}
+            fill
+            sizes="(max-width: 1024px) 100vw, 400px"
+            style={{ objectFit: "cover" }}
+            priority={false}
+          />
+        </div>
       ))}
+
+      <style jsx>{`
+        @keyframes wb-fade {
+          0% {
+            opacity: 1;
+          }
+          20% {
+            opacity: 1;
+          }
+          25% {
+            opacity: 0;
+          }
+          95% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      `}</style>
     </div>
   );
 }
