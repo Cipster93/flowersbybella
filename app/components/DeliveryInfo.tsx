@@ -1,7 +1,5 @@
 import React from "react";
 import { FaTruck, FaWhatsapp } from "react-icons/fa";
-import Link from "next/link";
-import { dancingScript } from "../lib/fonts";
 
 const DeliveryInfo = () => {
   return (
@@ -14,13 +12,13 @@ const DeliveryInfo = () => {
 
       <section className="flex-shrink-0 mb-1 md:mb-0">
         <span
-          className={`${dancingScript.className} text-2xl font-semibold tracking-wide text-white`}
+          className={` text-2xl font-semibold tracking-wide text-white`}
           itemProp="description"
         >
           Comenzi si Livrari la domiciliu
         </span>
       </section>
-        <span className={`text-yellow-500 text-xl ${dancingScript.className}`}>0728-361-107</span> <FaWhatsapp className="text-yellow-500 text-2xl" />
+        <span className={`text-yellow-500 text-xl `}>0728-361-107</span> <FaWhatsapp className="text-yellow-500 text-2xl" />
     </main>
   );
 };

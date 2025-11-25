@@ -12,7 +12,7 @@ import {
   FaRegCalendarAlt,
   FaLeaf,
 } from "react-icons/fa";
-import { dancingScript, caveat } from "../lib/fonts";
+import { caveat } from "../lib/fonts";
 
 export default function CatalogQRCode() {
   const { Image: QRImage } = useQRCode();
@@ -69,14 +69,14 @@ export default function CatalogQRCode() {
         >
           <header>
             <h2
-              className={`text-4xl md:text-6xl font-serif font-extrabold text-yellow-400 tracking-wide ${dancingScript.className}`}
+              className={`text-4xl md:text-6xl font-extrabold text-yellow-400 tracking-wide `}
             >
               Catalogul nostru floral
             </h2>
           </header>
 
           <p
-            className={`text-gray-200 text-2xl leading-relaxed ${dancingScript.className}`}
+            className={`text-gray-200 text-2xl leading-relaxed `}
           >
             Explorează colecția{" "}
             <span className="text-yellow-400 font-semibold">
@@ -109,7 +109,7 @@ export default function CatalogQRCode() {
           </ul>
 
           <p
-            className={`text-white/80 italic text-xl mt-6 ${dancingScript.className}`}
+            className={`text-white/80 italic text-xl mt-6 `}
           >
             Scanează codul QR sau apasă pe el pentru a vizualiza catalogul
             complet.
@@ -137,7 +137,7 @@ export default function CatalogQRCode() {
                 }}
               />
               <span
-                className={`block mt-5 text-yellow-400 font-serif text-xl tracking-wid ${dancingScript.className}`}
+                className={`block mt-5 text-yellow-400 text-xl tracking-wid `}
               >
                 Vezi catalogul
               </span>

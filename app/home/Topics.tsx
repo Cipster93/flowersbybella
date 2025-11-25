@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import ImageModal from "../components/ImageModal";
 import { motion } from "framer-motion";
 import { topics, Topic } from "../types/topics";
-import { dancingScript, caveat } from "../lib/fonts";
+import { caveat } from "../lib/fonts";
 
 const borderStyles = [
   "border-l-2 border-b-2 border-yellow-500 shadow-[0_-4px_15px_rgba(255,215,0,0.1)]",
@@ -34,7 +34,7 @@ const Topics = () => {
             {/* Text Section */}
             <div className="w-full md:max-w-md md:w-1/3 flex flex-col justify-center items-start h-full gap-4">
               <h2
-                className={`text-6xl font-bold text-yellow-600 mb-2 font-serif ${dancingScript.className}`}
+                className={`text-6xl font-bold text-yellow-600 mb-2 `}
               >
                 {topic.title}
               </h2>

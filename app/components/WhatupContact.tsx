@@ -22,7 +22,7 @@ export default function WhatupContact() {
         <aside
             role="complementary"
             aria-label="Contact WhatsApp Flowers by Bella"
-            className={`relative flex items-center gap-2 text-green-500 text-4xl cursor-pointer ${!isMobile ? 'group' : ''}`}
+            className={`relative font-sans flex items-center gap-2 text-green-500 text-4xl cursor-pointer ${!isMobile ? 'group' : ''}`}
             onMouseEnter={() => !isMobile && setShow(true)}
         >
             <span

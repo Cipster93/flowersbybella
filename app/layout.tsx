@@ -5,6 +5,7 @@ import WhatupContact from "./components/WhatupContact";
 import Footer from './components/Footer'
 import Header from "./components/Header";
 import Toolbar from "./components/Toolbar";
+import { dancingScript } from "./lib/fonts";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -71,7 +72,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={dancingScript.className}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col items-center justify-between min-h-screen`}
       >

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { dancingScript, caveat } from "../lib/fonts";
+import { caveat } from "../lib/fonts";
 
 const Events = () => {
   return (
@@ -24,7 +24,7 @@ const Events = () => {
       <div className="w-full lg:w-1/3 text-center flex flex-col items-center justify-center gap-10">
         <header>
           <h2
-            className={`text-3xl md:text-7xl font-bold bg-black text-yellow-500 mb-4 font-serif ${dancingScript.className}`}
+            className={`text-3xl md:text-7xl font-bold bg-black text-yellow-500 mb-4 `}
           >
             Flowers by Bella la evenimente
           </h2>

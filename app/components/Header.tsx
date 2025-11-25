@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import { dancingScript } from "../lib/fonts";
 
 const Header = () => {
   return (
@@ -19,7 +18,7 @@ const Header = () => {
           className="w-48 sm:w-64 md:w-80 h-auto object-contain "
         />
         <p
-          className={`text-2xl sm:text-3xl md:text-4xl text-gray-300 text-center ${dancingScript.className}`}
+          className={`text-2xl sm:text-3xl md:text-4xl text-gray-300 text-center `}
           aria-label="Descriere brand Flowers by Bella"
         >
           Emoție, rafinament și eleganță în fiecare petală.<br />
@@ -244,7 +243,7 @@ const Header = () => {
         {/* Conținut text */}
         <div className="relative z-10 max-w-xl">
           <p
-            className={`text-2xl sm:text-3xl md:text-5xl text-yellow-600 text-center ${dancingScript.className}`}
+            className={`text-2xl sm:text-3xl md:text-5xl text-yellow-600 text-center `}
             aria-label="Descriere brand Flowers by Bella"
           >
             Emoție, rafinament și eleganță în fiecare petală.<br />

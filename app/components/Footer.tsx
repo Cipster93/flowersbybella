@@ -4,7 +4,6 @@ import Image from "next/image";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import SocialIcons from "../components/Icons";
 import PrivacyPolicyModal from "./PrivacyPolicyModal";
-import Link from "next/link";
 
 const Footer = () => {
   const [open, setOpen] = useState(false);
@@ -28,15 +27,15 @@ const Footer = () => {
             height={70}
             className="rounded-md"
           />
-          <h2 className="text-2xl font-serif font-bold text-yellow-400 tracking-wide">
+          <h2 className="text-3xl font-bold text-yellow-400 tracking-wide">
             Flowers by Bella
           </h2>
-          <p className="text-xs text-gray-300 italic max-w-xs">
+          <p className="text-base text-gray-300 italic max-w-xs">
             Emoție, rafinament și eleganță în fiecare petală.
           </p>
           <div className="flex items-center gap-2">
             <button
-              className="text-yellow-400 underline text-xs"
+              className="text-yellow-400 underline text-base"
               onClick={() => setOpen(true)}
             >
               Politica de confidențialitate
@@ -54,30 +53,30 @@ const Footer = () => {
             Contact
           </h3>
           <div className="flex items-center gap-2">
-            <FaPhoneAlt className="text-yellow-400 text-sm" />
+            <FaPhoneAlt className="text-yellow-400 text-base" />
             <a
               href="https://wa.me/40728361107"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-yellow-400 transition"
+              className="hover:text-yellow-400 transition text-lg"
             >
               0728-361-107
             </a>
           </div>
           <div className="flex items-center gap-2">
-            <FaEnvelope className="text-yellow-400 text-sm" />
+            <FaEnvelope className="text-yellow-400 text-base" />
             <a
               href="https://mail.google.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-yellow-400 transition"
+              className="hover:text-yellow-400 transition text-lg"
             >
               flowers.artbybella@gmail.com
             </a>
           </div>
           <div className="flex items-center gap-2">
-            <FaMapMarkerAlt className="text-yellow-400 text-sm" />
-            <span>Bd. Independenței nr. 15A</span>
+            <FaMapMarkerAlt className="text-yellow-400 text-base" />
+            <span className="text-lg">Bd. Independenței nr. 15A</span>
           </div>
         </address>
 
@@ -122,7 +121,7 @@ const Footer = () => {
       </main>
 
       {/* Copyright */}
-      <div className="mt-6 text-center text-yellow-500 text-[10px] tracking-wide">
+      <div className="mt-6 text-center text-yellow-500 text-base tracking-wide">
         &copy; {new Date().getFullYear()} Flowers by Bella — Toate drepturile
         rezervate.
       </div>

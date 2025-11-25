@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { dinamicCategory } from "../types/dinamicCat";
-import { dancingScript } from "../lib/fonts";
 import DeliveryInfo from "./DeliveryInfo";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -15,7 +14,7 @@ export default function Toolbar() {
     <nav className="w-full bg-black py-6 flex flex-col md:flex-row justify-between px-6 items-center border-t-2 border-yellow-400/80">
       {/* Mobile header */}
       <div className="w-full flex justify-between items-center md:hidden mb-4">
-        <span className={`text-xl text-yellow-400 font-semibold ${dancingScript.className}`}>
+        <span className={`text-xl text-yellow-400 font-semibold `}>
           Catalog
         </span>
         <button
@@ -34,7 +33,7 @@ export default function Toolbar() {
         <li>
           <Link
             href="/"
-            className={`text-xl px-4 py-2 rounded-3xl font-semibold border-b-2 ${dancingScript.className} ${pathname === '/'
+            className={`text-xl px-4 py-2 rounded-3xl font-semibold border-b-2  ${pathname === '/'
                 ? 'bg-yellow-400 text-black border-yellow-400/80'
                 : 'text-yellow-500 border-b-transparent'
               }`}
@@ -45,7 +44,7 @@ export default function Toolbar() {
         <li>
           <Link
             href="/catalog"
-            className={`text-xl px-4 py-2 rounded-3xl font-semibold border-b-2 ${dancingScript.className} ${pathname === '/catalog'
+            className={`text-xl px-4 py-2 rounded-3xl font-semibold border-b-2  ${pathname === '/catalog'
                 ? 'bg-yellow-400 text-black border-yellow-400/80'
                 : 'text-yellow-500 border-b-transparent'
               }`}
@@ -57,7 +56,7 @@ export default function Toolbar() {
           <li key={idx}>
             <Link
               href={`/catalog/${cat.slug}`}
-              className={`md:text-2xl text-xl px-4 py-2 h-auto rounded-3xl font-semibold border-b-2 ${dancingScript.className} ${pathname === `/catalog/${cat.slug}`
+              className={`md:text-2xl text-xl px-4 py-2 h-auto rounded-3xl font-semibold border-b-2  ${pathname === `/catalog/${cat.slug}`
                   ? "bg-yellow-400 text-black border-yellow-400/80"
                   : "bg-black/70 text-yellow-500 border-b-transparent"
                 }`}

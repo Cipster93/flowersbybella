@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { dancingScript, caveat } from "../lib/fonts";
+import { caveat } from "../lib/fonts";
 
 export default function About() {
   return (
@@ -26,9 +26,7 @@ export default function About() {
         className="w-full md:w-1/2 mt-10 md:mt-0 md:pl-16 text-gray-300 border-r-2 border-yellow-500 px-6"
       >
         <header>
-          <h1
-            className={`text-4xl sm:text-3xl md:text-6xl font-bold font-serif text-yellow-500 mb-4 text-center ${dancingScript.className}`}
-          >
+          <h1 className="text-4xl sm:text-3xl md:text-6xl font-bold text-yellow-500 mb-4 text-center ">
             Flowers by Bella
           </h1>
         </header>

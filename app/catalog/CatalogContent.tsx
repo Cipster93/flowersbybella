@@ -2,14 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { dinamicCategory } from "../types/dinamicCat";
-import { dancingScript, caveat } from "../lib/fonts";
+import {  caveat } from "../lib/fonts";
 
 
 const CatalogCategories = () => {
   return (
     <main className="w-full min-h-screen flex flex-col items-center py-12 bg-black">
       <h1
-        className={`${dancingScript.className} text-4xl md:text-4xl font-serif font-bold text-yellow-500 mb-4 text-center`}
+        className={` text-4xl md:text-4xl  font-bold text-yellow-500 mb-4 text-center`}
       >
         Categorii Flowers by Bella
       </h1>
@@ -60,7 +60,7 @@ const CatalogCategories = () => {
               }`}
             >
               <h2
-                className={`${dancingScript.className} text-2xl md:text-4xl font-semibold text-yellow-500 mb-2 text-center`}
+                className={` text-2xl md:text-4xl font-semibold text-yellow-500 mb-2 text-center`}
               >
                 {cat.name}
               </h2>
@@ -74,7 +74,7 @@ const CatalogCategories = () => {
             </div>
             <Link
               href={`/catalog/${cat.slug}`}
-              className={`bg-yellow-700 text-white text-xl px-4 py-1 rounded-full font-semibold hover:bg-yellow-500 transition ${dancingScript.className} mt-auto`}
+              className={`bg-yellow-700 text-white text-xl px-4 py-1 rounded-full font-semibold hover:bg-yellow-500 transition  mt-auto`}
             >
               Vezi detalii
             </Link>
