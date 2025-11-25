@@ -12,8 +12,8 @@ export default function WeeklyImage({ images }) {
       setTimeout(() => {
         setIndex((v) => (v + 1) % images.length);
         setFade(true);
-      }, 200);
-    }, 5000);
+      }, 900);
+    }, 4000);
 
     return () => clearInterval(intv);
   }, [images.length]);
@@ -23,7 +23,7 @@ export default function WeeklyImage({ images }) {
       src={images[index]}
       alt="Oferte săptămânii"
       className={`rounded-xl object-cover w-full max-w-md h-44 lg:h-96 transition-opacity duration-500 ${
-        fade ? "opacity-100" : "opacity-0"
+        fade ? "opacity-800" : "opacity-50"
       }`}
       width={400}
       height={300}

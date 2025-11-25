@@ -8,7 +8,7 @@ export default function WeeklyOffers() {
 
   return (
     <section
-      className="w-full rounded-2xl p-6 lg:p-6 gap-8 lg:border-l-8 lg:border-red-600 flex flex-col lg:flex-row items-center justify-between"
+      className="w-full rounded-2xl p-6 lg:p-6 gap-8  lg:border-r-8 lg:border-red-600 flex flex-col lg:flex-row items-center justify-between"
       aria-labelledby="weekly-offers-heading"
     >
       <figure className="w-full lg:w-1/3 flex items-center justify-center">
