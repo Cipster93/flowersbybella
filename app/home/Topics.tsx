@@ -5,6 +5,7 @@ import ImageModal from "../components/ImageModal";
 import { motion } from "framer-motion";
 import { topics, Topic } from "../types/topics";
 import { caveat } from "../lib/fonts";
+import Image from "next/image";
 
 const borderStyles = [
   "border-l-2 border-b-2 border-yellow-500 shadow-[0_-4px_15px_rgba(255,215,0,0.1)]",
@@ -27,9 +28,8 @@ const Topics = () => {
           <section
             key={idx}
             aria-label={topic.title}
-            className={`w-full flex flex-col md:flex-row ${
-              reverse ? "md:flex-row-reverse" : ""
-            } items-center justify-between rounded-2xl shadow-2xl p-6 gap-8 ${borderClass}`}
+            className={`w-full flex flex-col md:flex-row ${reverse ? "md:flex-row-reverse" : ""
+              } items-center justify-between rounded-2xl shadow-2xl p-6 gap-8 ${borderClass}`}
           >
             {/* Text Section */}
             <div className="w-full md:max-w-md md:w-1/3 flex flex-col justify-center items-start h-full gap-4">
@@ -53,11 +53,14 @@ const Topics = () => {
             <div className="w-full md:w-2/3 flex flex-col sm:flex-row gap-6 items-center justify-center">
               {topic.images.map((img: string, i: number) => (
                 <figure key={i} className="w-full sm:w-1/3">
-                  <img
+                  <Image
                     src={img}
                     alt={`${topic.title} ${i + 1}`}
                     className="w-full h-56 md:h-72 object-cover rounded-xl shadow-md transition-transform duration-300 hover:scale-105 cursor-pointer"
                     onClick={() => setSelectedImage(img)}
+                    width={346}
+                    height={461}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 346px"
                   />
                 </figure>
               ))}

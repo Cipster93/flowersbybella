@@ -27,10 +27,10 @@ const Footer = () => {
             height={70}
             className="rounded-md"
           />
-          <h2 className="text-3xl font-bold text-yellow-400 tracking-wide">
+          <h2 className="text-3xl font-serif  text-yellow-400 tracking-wide">
             Flowers by Bella
           </h2>
-          <p className="text-base text-gray-300 italic max-w-xs">
+          <p className="text-lg text-gray-300 italic max-w-xs">
             Emoție, rafinament și eleganță în fiecare petală.
           </p>
           <div className="flex items-center gap-2">
@@ -49,7 +49,7 @@ const Footer = () => {
           aria-label="Date de contact Flowers by Bella"
           className="flex flex-col items-center md:items-start space-y-1 text-gray-300 text-sm not-italic"
         >
-          <h3 className="text-yellow-400 font-semibold text-sm uppercase tracking-wide">
+          <h3 className="text-yellow-400 font-serif  text-sm uppercase tracking-wide">
             Contact
           </h3>
           <div className="flex items-center gap-2">
@@ -85,7 +85,7 @@ const Footer = () => {
           aria-label="Rețele sociale Flowers by Bella"
           className="flex flex-col items-center md:items-end space-y-2"
         >
-          <h3 className="text-yellow-400 font-semibold text-sm uppercase tracking-wide">
+          <h3 className="text-yellow-400  font-serif text-sm uppercase tracking-wide">
             Urmărește-ne
           </h3>
           <SocialIcons />
