@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import WhatupContact from "./components/WhatupContact";
 import Footer from './components/Footer'
@@ -7,15 +6,6 @@ import Header from "./components/Header";
 import Toolbar from "./components/Toolbar";
 import { dancingScript } from "./lib/fonts";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: {
@@ -74,7 +64,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={dancingScript.className}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col items-center justify-between min-h-screen`}
+        className=" antialiased flex flex-col items-center justify-between min-h-screen"
       >
         <Header />
         <Toolbar />
