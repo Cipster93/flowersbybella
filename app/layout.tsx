@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     siteName: "Flowers by Bella",
     images: [
       {
-        url: "https://flowersbybella.ro/og-image.jpg",
+        url: "https://flowersbybella.ro/logo.webp",
         width: 1200,
         height: 630,
         alt: "Flowers by Bella - Buchete și aranjamente florale deosebite",
@@ -63,6 +63,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={dancingScript.className}>
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/web-app-manifest-192x192.png" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/web-app-manifest-512x512.png" />
+        <link rel="icon" type="image/svg+xml" href="/icon0.svg" />
+        <link rel="icon" type="image/png" href="/icon1.png" />
+      </head>
       <body
         className=" antialiased flex flex-col items-center justify-between min-h-screen"
       >

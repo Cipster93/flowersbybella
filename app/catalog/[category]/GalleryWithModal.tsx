@@ -52,11 +52,11 @@ export default function CategoryClient({ foundCategory, flowers }: CategoryClien
                                         <Image
                                             src={flower.imgTop || ""}
                                             alt={flower.name + " sus"}
-                                            width={346}
-                                            height={461}
-                                            className="w-[346px] h-[461px] object-cover rounded-2xl mb-2 cursor-pointer"
+                                            width={384}
+                                            height={192}
+                                            className="w-72 h-72 md:w-80 md:h-72 object-cover rounded-2xl mb-2 cursor-pointer"
                                             onClick={() => setModalImage(flower.imgTop ?? "")}
-                                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 346px"
+                                            sizes="(max-width: 768px) 100vw, 606px"
                                         />
                                         <p className={`${caveat.className} text-3xl text-yellow-500 text-center p-2 h-auto`}>
                                             Lumanari
@@ -64,11 +64,11 @@ export default function CategoryClient({ foundCategory, flowers }: CategoryClien
                                         <Image
                                             src={flower.imgBottom || ""}
                                             alt={flower.name + " jos"}
-                                            width={346}
-                                            height={461}
-                                            className="w-[346px] h-[461px] object-cover rounded-2xl mt-2 cursor-pointer"
+                                            width={384}
+                                            height={192}
+                                            className="w-72 h-72 md:w-80 md:h-72 object-cover rounded-2xl mt-2 cursor-pointer"
                                             onClick={() => setModalImage(flower.imgBottom ?? "")}
-                                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 346px"
+                                            sizes="(max-width: 768px) 100vw, 606px"
                                         />
                                         <p className={` text-3xl font-semibold text-yellow-500 text-center py-2`}>
                                             Preț: <span className="text-white">{flower.price} lei</span>
@@ -104,11 +104,11 @@ export default function CategoryClient({ foundCategory, flowers }: CategoryClien
                                         <Image
                                             src={flower.img || ""}
                                             alt={flower.name}
-                                            width={346}
-                                            height={461}
-                                            className="w-[346px] h-[461px] object-cover rounded-2xl mb-2 cursor-pointer"
+                                            width={384}
+                                            height={192}
+                                            className="w-72 h-72 md:w-80 md:h-72 object-cover rounded-2xl mb-2 cursor-pointer"
                                             onClick={() => setModalImage(flower.img ?? "")}
-                                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 346px"
+                                            sizes="(max-width: 768px) 100vw, 606px"
                                         />
                                         <p className={` text-3xl font-semibold text-yellow-500 text-center py-2`}>
                                             Preț: <span className="text-white">{flower.price} lei</span>
@@ -144,11 +144,11 @@ export default function CategoryClient({ foundCategory, flowers }: CategoryClien
                                         <Image
                                             src={flower.img || ""}
                                             alt={flower.name}
-                                            width={346}
-                                            height={461}
-                                            className="w-[346px] h-[461px] object-cover rounded-2xl mb-2 cursor-pointer"
+                                            width={384}
+                                            height={192}
+                                            className="w-72 h-72 md:w-80 md:h-72 object-cover rounded-2xl mb-2 cursor-pointer"
                                             onClick={() => setModalImage(flower.img ?? "")}
-                                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 346px"
+                                            sizes="(max-width: 768px) 100vw, 606px"
                                         />
                                         <p className={` text-3xl font-semibold text-yellow-500 text-center py-2`}>
                                             Preț: <span className="text-white">{flower.price} lei</span>
@@ -194,11 +194,11 @@ export default function CategoryClient({ foundCategory, flowers }: CategoryClien
                                 <Image
                                     src={flower.imgTop || flower.img || ""}
                                     alt={flower.name}
-                                    width={346}
-                                    height={461}
-                                    className="w-[346px] h-[461px] object-cover rounded-2xl mb-2 cursor-pointer"
+                                    width={384}
+                                    height={384}
+                                    className="w-72 h-72 md:w-80 md:h-86 object-cover rounded-2xl mb-2 cursor-pointer"
                                     onClick={() => setModalImage(flower.img ?? "")}
-                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 346px"
+                                    sizes="(max-width: 768px) 100vw, 606px"
                                 />
                                 <h2 className={` text-4xl font-semibold text-yellow-500 mb-1 text-center`}>
                                     {flower.name} - {idx + 1}
