@@ -22,7 +22,8 @@ export default function WeeklyImage({ images = [] }) {
             fill
             sizes="(max-width: 1024px) 100vw, 400px"
             style={{ objectFit: "cover" }}
-            priority={false}
+            priority={i === 0}
+            fetchPriority={i === 0 ? "high" : undefined}
           />
         </div>
       ))}

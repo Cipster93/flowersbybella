@@ -17,6 +17,8 @@ const Events = () => {
           width={380}
           height={380}
           className="w-full max-w-sm h-160 object-contain rounded-xl"
+          sizes="(max-width: 768px) 100vw, 606px"
+          priority
         />
       </div>
 
@@ -52,6 +54,8 @@ const Events = () => {
           width={380}
           height={380}
           className="w-full max-w-sm h-160 object-contain rounded-xl"
+          sizes="(max-width: 768px) 100vw, 606px"
+          priority
         />
       </div>
     </section>
