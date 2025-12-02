@@ -28,7 +28,7 @@ export const dinamicCategory: DinamicCategory[] = [
     {
         name: "Oferte",
         slug: "oferte",
-        img: "/Oferte/of1.webp",
+        img: "/Oferte/of10.webp",
         price: "Pret",
         desc: "Profită de cele mai bune oferte și promoții la buchete și aranjamente florale.",
         flowers: [
