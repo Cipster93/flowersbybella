@@ -25,13 +25,13 @@ export const topics: Topic[] = [
     desc: "Transformă fiecare clipă într-o amintire specială cu buchetele noastre. Florile sunt alese pentru a marca momentele importante din viața ta, oferind emoție și culoare.",
   },
   {
-    title: "Memorial",
+    title: "Coroane",
     images: ["/Memorial/m24.webp", "/Memorial/m25.webp", "/Memorial/m2.webp"],
     desc: "Aranjamentele noastre memoriale sunt create cu respect și sensibilitate, pentru a aduce un omagiu sincer celor dragi. Fiecare floare este aleasă cu grijă, pentru a transmite compasiune, recunoștință și liniște în momentele de aducere-aminte.",
   },
   {
     title: "Oferte",
-    images: ["/Oferte/of1.webp", "/Oferte/of2.webp", "/Oferte/of3.webp"],
+    images: ["/Oferte/of8.webp", "/Oferte/of9.webp", "/Oferte/of10.webp"],
     desc: "Descoperă selecția noastră de oferte rafinate, concepute pentru a aduce un plus de eleganță și inspirație fiecărei ocazii. Fiecare aranjament surprinde armonia dintre stil și prospețime, fiind creat cu atenție la detalii pentru a transforma orice moment într-o experiență memorabilă.",
   },
 ];

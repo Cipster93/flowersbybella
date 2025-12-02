@@ -1,11 +1,11 @@
 export const weeklyOfferImages = [
-  "/Oferte/of1.webp",
-  "/Oferte/of2.webp",
-  "/Oferte/of3.webp",
-  "/Oferte/of4.webp",
-  "/Oferte/of5.webp",
-  "/Oferte/of6.webp",
-  "/Oferte/of7.webp",
+  "/Oferte/of8.webp",
+  "/Oferte/of9.webp",
+  "/Oferte/of10.webp",
+  // "/Oferte/of4.webp",
+  // "/Oferte/of5.webp",
+  // "/Oferte/of6.webp",
+  // "/Oferte/of7.webp",
 ];
 export type Image =
   | "/Swiper/flower1.webp"

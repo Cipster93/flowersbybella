@@ -12,6 +12,7 @@ export default function WeeklyOffers() {
     >
       <figure className="w-full lg:w-1/3 flex items-center justify-center">
         <WeeklyImage images={weeklyOfferImages} />
+        
       </figure>
 
       <article className="w-full flex flex-col justify-center items-start gap-6 px-2 lg:px-8">

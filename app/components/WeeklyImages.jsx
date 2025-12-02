@@ -3,7 +3,7 @@
 import Image from "next/image";
 
 export default function WeeklyImage({ images = [] }) {
-  const duration = 4;
+  const duration = 3;
 
   return (
     <div className="relative w-full max-w-md h-44 lg:h-96 overflow-hidden rounded-xl">

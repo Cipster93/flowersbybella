@@ -52,7 +52,7 @@ export default function Toolbar() {
             Catalog
           </Link>
         </li>
-        {dinamicCategory.map((cat, idx) => (
+        {dinamicCategory.slice(0, -1).map((cat, idx) => (
           <li key={idx}>
             <Link
               href={`/catalog/${cat.slug}`}
