@@ -17,6 +17,7 @@ const Header = () => {
           height={300}
           className="w-48 sm:w-64 md:w-80 h-auto object-contain "
           priority
+          sizes="(max-width: 768px) 100vw, 606px"
         />
         <p
           className={`text-2xl sm:text-3xl md:text-4xl text-gray-300 text-center `}
