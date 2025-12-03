@@ -8,7 +8,7 @@ import CustomAutoSwiper from '../components/CustomAutoSwiper'
 
 const HomeView = () => {
     return (
-        <main className="w-full h-auto flex bg-black flex-col items-center sm:gap-1 sm:py-2 gap-6 py-6">
+        <main className="w-full h-auto flex bg-black flex-col items-center sm:gap-1 sm:py-1 gap-6 py-6">
             <WeeklyOffers />
             <CustomAutoSwiper/>
             <About />
