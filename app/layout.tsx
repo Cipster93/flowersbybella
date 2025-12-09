@@ -5,6 +5,8 @@ import Footer from './components/Footer'
 import Header from "./components/Header";
 import Toolbar from "./components/Toolbar";
 import { dancingScript } from "./lib/fonts";
+import Script from "next/script";
+
 
 
 export const metadata: Metadata = {
@@ -62,7 +64,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={dancingScript.className}>
+    <html lang="ro" className={dancingScript.className}>
       <head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon.png" />
@@ -83,6 +85,19 @@ export default function RootLayout({
         <div className="fixed bottom-10 right-10 z-50">
           <WhatupContact />
         </div>
+        <Script
+          id="structured-data"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Flowers by Bella",
+              url: "https://flowersbybella.ro",
+              logo: "https://flowersbybella.ro/logo.webp",
+            }),
+          }}
+        />
       </body>
     </html>
   );

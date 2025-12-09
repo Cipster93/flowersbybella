@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Catalog flori | Flowers by Bella",
     description: "Descoperă toate categoriile de buchete și aranjamente florale Flowers by Bella.",
-    images: ["/og-image.jpg"],
+    images: ["/logo.webp"],
   },
 };
 

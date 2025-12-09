@@ -16,7 +16,7 @@ export const generateMetadata = async ({ params }: { params: { category: string 
     openGraph: {
       title: `${category.name} | Flowers by Bella`,
       description: category.description,
-      images: [category.ogImage || "/og-image.jpg"],
+      images: [category.ogImage || "/logo.webp"],
     },
   };
 };
